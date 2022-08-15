@@ -30,14 +30,14 @@ const AdCart = ({ad}) => {
     }
 
     return (
-        <Card sx={{p: 2, pb: 0}}>
+        <Card sx={{padding: '16px', paddingBottom: '0px'}}>
             <StyledCardMedia
                 component="img"
                 image={ad.image ? ad.image : noFoto}
                 alt={ad.name}
                 onClick={()=> handleAd(ad.id, navigate)}
             />
-            <CardContent sx={{p: 0, pt: 2}}>
+            <CardContent sx={{padding: '0px', paddingTop: '16px'}}>
                 <NameTypography
                     gutterBottom
                     variant="h5"
@@ -55,7 +55,7 @@ const AdCart = ({ad}) => {
                 <Typography
                     variant="h6"
                     color="black"
-                    sx={{minHeight: '70px', mt: 2}}
+                    sx={{minHeight: '70px', marginTop: '16px'}}
                 >
                     <strong>{ad.location.split(',')[0]}</strong>
                     <small>{ad.location.split(',')[1]}</small>

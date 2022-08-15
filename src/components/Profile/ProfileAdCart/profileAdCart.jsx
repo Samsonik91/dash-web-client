@@ -82,7 +82,7 @@ const ProfileAdCart = ({ad, setDeleting}) => {
                         </NameTypography>
                         <Typography
                             variant='body1'
-                            sx={{marginTop: {xs: 2, sm: 0}}}
+                            sx={{marginTop: {xs: '16px', sm: 0}}}
                         >
                             {ad.categoryName}
                         </Typography>
@@ -127,7 +127,7 @@ const ProfileAdCart = ({ad, setDeleting}) => {
                         size='large'
                         variant='outlined'
                         disabled={disable}
-                        sx={{ml: 2}}
+                        sx={{marginLeft: '16px'}}
                         onClick={handleDeleteAd}
                     >
                         Удалить

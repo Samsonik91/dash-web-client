@@ -156,7 +156,7 @@ const PriceBox = ({postData, setPostData, priceError, setPriceError, isPrompt, s
                         <Button
                             key={i}
                             value={item.value}
-                            sx={{width: 95, color: item.value !== buttonValue ? 'black' : null}}
+                            sx={{width: '95px', color: item.value !== buttonValue ? 'black' : null}}
                             variant={item.value === buttonValue ? 'contained' : 'outlined'}
                             onClick={()=> handleButtonValue(item.value)}
                         >
@@ -182,7 +182,7 @@ const PriceBox = ({postData, setPostData, priceError, setPriceError, isPrompt, s
                         size='small'
                         value={currency}
                         onChange={handleCurrencyChange}
-                        sx={{minWidth: 80}}
+                        sx={{minWidth: '80px'}}
                     >
                         {currencies.map((option) => (
                             <MenuItem key={option.value} value={option.value}>
@@ -205,8 +205,8 @@ const PriceBox = ({postData, setPostData, priceError, setPriceError, isPrompt, s
                         onChange={handleHaggle}
                     />
                 </HaggleBox>
-                <Typography variant='h6' sx={{mt: 4}}>Дополнительная информация</Typography>
-                <Typography variant='subtitle1' sx={{mt: 1}}>Частное лицо или бизнес*</Typography>
+                <Typography variant='h6' sx={{marginTop: '32px'}}>Дополнительная информация</Typography>
+                <Typography variant='subtitle1' sx={{marginTop: '8px'}}>Частное лицо или бизнес*</Typography>
                 <TypeBox>
                     <TypeButton
                         variant='contained'
@@ -221,7 +221,7 @@ const PriceBox = ({postData, setPostData, priceError, setPriceError, isPrompt, s
                         onClick={()=> handleBusiness(true)}
                     >Бизнес</TypeButton>
                 </TypeBox>
-                <Typography variant='subtitle1' sx={{mt: 2}}>Состояние*</Typography>
+                <Typography variant='subtitle1' sx={{marginTop: '16px'}}>Состояние*</Typography>
                 <TypeBox>
                     <TypeButton
                         variant='contained'
@@ -236,7 +236,7 @@ const PriceBox = ({postData, setPostData, priceError, setPriceError, isPrompt, s
                         onClick={()=> handleIsNewItem(false)}
                     >Б/У</TypeButton>
                 </TypeBox>
-                <Typography variant='h6' sx={{mt: 4}}>Доставка</Typography>
+                <Typography variant='h6' sx={{marginTop: '32px'}}>Доставка</Typography>
                 <DeliverySwitch>
                     <Typography variant='body1'>Отправляю почтой</Typography>
                     <Switch
@@ -247,7 +247,7 @@ const PriceBox = ({postData, setPostData, priceError, setPriceError, isPrompt, s
                 <DeliveryBox sx={{display: postData.delivery ? 'flex' : 'none'}}>
                     <FormControl error={error}>
                         <FormLabel sx={{color: '#49524b'}}>Выберите из списка:</FormLabel>
-                            <FormGroup sx={{mt:1}}>
+                            <FormGroup sx={{marginTop: '8px'}}>
                                 <DeliveryFormControl
                                     control={<Checkbox
                                         checked={UkrPoshta}

@@ -94,7 +94,7 @@ const Navbar = ({isPrompt, setIsPrompt, isPromptAuth, setIsPromptAuth, socket}) 
                     sx={{cursor: 'pointer'}}
                 >
                     <DashboardCustomizeIcon
-                        sx={{fontSize: 60, color: 'white'}}
+                        sx={{fontSize: '60px', color: 'white'}}
                     />
                     <Typography
                         variant='h2'
@@ -107,7 +107,7 @@ const Navbar = ({isPrompt, setIsPrompt, isPromptAuth, setIsPromptAuth, socket}) 
                 </Box>
                 <Search onChange={handleSearchValue}>
                     <StyledSearchIcon/>
-                    <InputBase placeholder='Поиск на сайте' sx={{pl: 4}} value={search}/>
+                    <InputBase placeholder='Поиск на сайте' sx={{paddingLeft: '32px'}} value={search}/>
                     <SearchButton onClick={searchByTags}>Найти</SearchButton>
                 </Search>
                 <Box display='flex' alignItems='center'>
@@ -132,7 +132,7 @@ const Navbar = ({isPrompt, setIsPrompt, isPromptAuth, setIsPromptAuth, socket}) 
                             sx={{display:{xs: 'block', md: 'none'}}}
                         >
                             <AddBoxOutlinedIcon
-                                sx={{fontSize: 38, color: 'yellow', mt: 1}}
+                                sx={{fontSize: '38px', color: 'yellow', marginTop: '8px'}}
                             />
                         </IconButton>
                     </Box>

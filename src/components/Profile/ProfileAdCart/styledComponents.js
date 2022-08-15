@@ -1,13 +1,13 @@
 import {Box, Button, Grid, styled, Typography} from "@mui/material"
 
-export const MainCardBox = styled(Box)(({theme})=>({
+export const MainCardBox = styled(Box)(()=>({
     display: 'flex',
     flexDirection: 'column',
-    marginTop: theme.spacing(2),
+    marginTop: '16px',
     background: 'white',
     borderRadius: '5px',
-    padding: theme.spacing(2),
-    paddingBottom: theme.spacing(1),
+    padding: '16px',
+    paddingBottom: '8px',
     border: '1px solid black'
 }))
 
@@ -36,14 +36,14 @@ export const LocationBox = styled(Box)(({theme})=>({
         alignItems: 'start'
     },
     [theme.breakpoints.down('sm')]:{
-        marginTop: theme.spacing(2)
+        marginTop: '16px'
     }
 }))
 
 export const LocationTypography = styled(Typography)(({theme})=>({
     marginBottom: '5px',
     [theme.breakpoints.up('md')]:{
-        marginLeft: theme.spacing(1)
+        marginLeft: '8px'
     }
 }))
 
@@ -53,11 +53,11 @@ export const CardDescription = styled(Box)(({theme})=>({
     flexDirection: 'column',
     justifyContent: 'space-between',
     alignItems: 'start',
-    marginLeft: theme.spacing(2),
+    marginLeft: '16px',
     borderBottom: '1px solid #9b9ea3',
     [theme.breakpoints.down('sm')]:{
         borderBottom: 'none',
-        marginTop: theme.spacing(2)
+        marginTop: '16px'
     }
 }))
 
@@ -67,7 +67,7 @@ export const NameTypography = styled(Typography)(({theme})=>({
         color: '#5b74d9'
     },
     [theme.breakpoints.down('sm')]:{
-        marginTop: theme.spacing(2)
+        marginTop: '16px'
     }
 }))
 
@@ -75,7 +75,7 @@ export const PriceGrid = styled(Grid)(({theme})=>({
     borderBottom: '1px solid #9b9ea3',
     marginBottom: '1px',
     [theme.breakpoints.down('sm')]:{
-        paddingLeft: theme.spacing(2)
+        paddingLeft: '16px'
     }
 }))
 
@@ -86,13 +86,13 @@ export const PriceBox = styled(Box)(({theme})=>({
     [theme.breakpoints.down('sm')]:{
         flexDirection: 'row',
         alignItems: 'end',
-        marginTop: theme.spacing(4),
+        marginTop: '32px',
     }
 }))
 
 export const HaggleTypography = styled(Typography)(({theme})=>({
     textAlign: 'center',
-    marginLeft: theme.spacing(2),
+    marginLeft: '16px',
     [theme.breakpoints.down('sm')]:{
         marginBottom: '5px'
     }
@@ -103,11 +103,11 @@ export const UpdatingBox = styled(Box)(({theme})=>({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginTop: theme.spacing(1),
+    marginTop: '8px',
     [theme.breakpoints.down('sm')]:{
         flexDirection: 'column',
         alignItems: 'start',
-        marginLeft: theme.spacing(2)
+        marginLeft: '16px'
     }
 }))
 
@@ -115,12 +115,12 @@ export const ButtonBox = styled(Box)(({theme})=>({
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'end',
-    marginBottom: theme.spacing(1),
-    marginTop: theme.spacing(1),
+    marginBottom: '8px',
+    marginTop: '8px',
     [theme.breakpoints.down('sm')]:{
         marginLeft: '50%',
         transform: 'translateX(-53%)',
-        marginTop: theme.spacing(2)
+        marginTop: '16px'
     }
 }))
 
@@ -134,8 +134,7 @@ export const UpdateButton = styled(Button)(()=>({
 }))
 
 export const IdTypography = styled(Typography)(({theme})=>({
-    marginBottom: theme.spacing(4),
-    [theme.breakpoints.down('sm')]:{
-        marginBottom: theme.spacing(0)
+    [theme.breakpoints.up('sm')]:{
+        marginBottom: '32px'
     }
 }))

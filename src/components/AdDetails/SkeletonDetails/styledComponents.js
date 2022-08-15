@@ -2,7 +2,7 @@ import {Avatar, Box, Grid, styled} from "@mui/material"
 
 export const MainGrid = styled(Grid)(({theme})=>({
     margin: 'auto',
-    marginTop: theme.spacing(2),
+    marginTop: '16px',
     opacity: 0.7,
     [theme.breakpoints.up('md')]:{
         marginLeft: '50%',
@@ -10,9 +10,9 @@ export const MainGrid = styled(Grid)(({theme})=>({
     }
 }))
 
-export const InnerGrid = styled(Grid)(({theme})=>({
-    padding: theme.spacing(1),
-    marginBottom: theme.spacing(2)
+export const InnerGrid = styled(Grid)(()=>({
+    padding: '8px',
+    marginBottom: '16px'
 }))
 
 export const SliderSkeleton = styled(Box)(({theme})=>({
@@ -21,14 +21,14 @@ export const SliderSkeleton = styled(Box)(({theme})=>({
     alignItems: 'center',
     width: '100%',
     background: 'white',
-    padding: theme.spacing(2),
+    padding: '16px',
     borderRadius: '5px',
     [theme.breakpoints.down('md')]:{
         width: '88%'
     }
 }))
 
-export const InnerSliderBox = styled(Box)(({theme})=>({
+export const InnerSliderBox = styled(Box)(()=>({
     width: '100%',
     borderRadius: '5px',
     height: '400px'
@@ -37,98 +37,98 @@ export const InnerSliderBox = styled(Box)(({theme})=>({
 export const DescriptionSkeleton = styled(Box)(({theme})=>({
     width: '100%',
     background: 'white',
-    padding: theme.spacing(2),
+    padding: '16px',
     borderRadius: '5px',
     display: 'flex',
     flexDirection: 'column',
-    gap: theme.spacing(4),
-    marginTop: theme.spacing(2),
-    marginBottom: theme.spacing(2),
+    gap: '32px',
+    marginTop: '16px',
+    marginBottom: '16px',
     [theme.breakpoints.down('md')]:{
         width: '88%'
     }
 }))
 
-export const TopBox = styled(Box)(({theme})=>({
+export const TopBox = styled(Box)(()=>({
     width: '100%',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center'
 }))
 
-export const DateBox = styled(Box)(({theme})=>({
+export const DateBox = styled(Box)(()=>({
     width: '40%',
-    height: theme.spacing(2),
+    height: '16px',
     background: 'lightgray',
     borderRadius: '3px'
 }))
 
-export const NameBox= styled(Box)(({theme})=>({
+export const NameBox= styled(Box)(()=>({
     width: '100%',
     background: 'lightgray',
     borderRadius: '3px',
-    height: theme.spacing(5)
+    height: '40px'
 }))
 
-export const PriceBox = styled(Box)(({theme})=>({
+export const PriceBox = styled(Box)(()=>({
     width: '15%',
-    height: theme.spacing(5),
+    height: '40px',
     background: 'lightgray',
     borderRadius: '3px',
 }))
 
-export const Characteristics = styled(Box)(({theme})=>({
+export const Characteristics = styled(Box)(()=>({
     width: '70%',
     display: 'flex',
     justifyContent: 'space-between'
 }))
 
-export const DescriptionBox = styled(Box)(({theme})=>({
+export const DescriptionBox = styled(Box)(()=>({
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    gap: theme.spacing(1)
+    gap: '8px'
 }))
 
-export const DescriptionLinear = styled(Box)(({theme})=>({
+export const DescriptionLinear = styled(Box)(()=>({
     background: 'lightgray',
     borderRadius: '3px',
-    height: theme.spacing(3)
+    height: '24px'
 }))
 
 export const MessageSkeleton = styled(Box)(({theme})=>({
     width: '100%',
     background: 'white',
-    padding: theme.spacing(2),
+    padding: '16px',
     borderRadius: '5px',
     display: 'flex',
     flexDirection: 'column',
-    gap: theme.spacing(2),
+    gap: '16px',
     alignItems: 'end',
     [theme.breakpoints.down('md')]:{
         width: '88%'
     }
 }))
 
-export const TextFieldSkeleton = styled(Box)(({theme})=>({
+export const TextFieldSkeleton = styled(Box)(()=>({
     width: '100%',
     background: 'lightgray',
     borderRadius: '4px',
-    height: theme.spacing(14)
+    height: '112px'
 }))
 
-export const ProfileGrid = styled(Grid)(({theme})=>({
-    padding: theme.spacing(1),
-    marginBottom: theme.spacing(2)
+export const ProfileGrid = styled(Grid)(()=>({
+    padding: '8px',
+    marginBottom: '16px'
 }))
 
 export const ProfileBox = styled(Box)(({theme})=>({
     width: 'calc(100%-16px)',
-    marginLeft: theme.spacing(2),
-    marginBottom: theme.spacing(2),
+    marginLeft: '16px',
+    marginBottom: '16px',
     background: 'white',
-    gap: theme.spacing(2),
-    padding: theme.spacing(2),
+    gap: '16px',
+    padding: '16px',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -146,25 +146,25 @@ export const SkeletonAvatar = styled(Avatar)(()=>({
 
 export const DeliverySkeleton = styled(Box)(({theme})=>({
     width: 'calc(100%-16px)',
-    marginLeft: theme.spacing(2),
-    marginTop: theme.spacing(2),
-    padding: theme.spacing(2),
+    marginLeft: '16px',
+    marginTop: '16px',
+    padding: '16px',
     background: 'white',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'start',
-    gap: theme.spacing(2),
+    gap: '16px',
     borderRadius: '5px',
     [theme.breakpoints.down('md')]:{
         margin: 'auto',
-        marginTop: theme.spacing(2),
+        marginTop: '16px',
         width: '88%'
     }
 }))
 
-export const MapBox = styled(Box)(({theme})=>({
+export const MapBox = styled(Box)(()=>({
     width: '35%',
-    height: theme.spacing(10),
+    height: '80px',
     background: 'lightgray',
     borderRadius: '4px'
 }))

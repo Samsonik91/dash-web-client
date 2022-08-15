@@ -1,20 +1,20 @@
 import {Box, Button, FormControlLabel, styled, Typography} from "@mui/material"
 
-export const MainBox = styled(Box)(({theme})=>({
+export const MainBox = styled(Box)(()=>({
     background: 'white',
-    padding: theme.spacing(4),
-    marginBottom: theme.spacing(2),
-    borderRadius: theme.spacing(2)
+    padding: '32px',
+    marginBottom: '16px',
+    borderRadius: '16px'
 }))
 
-export const InnerBox =styled(Box)(({theme})=>({
+export const InnerBox =styled(Box)(()=>({
     width: '285px',
     display: 'flex',
     flexDirection: 'column'
 }))
 
-export const PriceFieldBox = styled(Box)(({theme})=>({
-    marginTop: theme.spacing(4),
+export const PriceFieldBox = styled(Box)(()=>({
+    marginTop: '32px',
     justifyContent: 'space-between'
 }))
 
@@ -41,19 +41,19 @@ export const DeliverySwitch = styled(Box)(()=>({
     width: '104%'
 }))
 
-export const DeliveryBox = styled(Box)(({theme})=>({
+export const DeliveryBox = styled(Box)(()=>({
     display: 'flex',
     flexDirection: 'column',
-    marginTop: theme.spacing(3)
+    marginTop: '24px'
 }))
 
-export const DeliveryFormControl = styled(FormControlLabel)(({theme})=>({
-    marginLeft: theme.spacing(10),
+export const DeliveryFormControl = styled(FormControlLabel)(()=>({
+    marginLeft: '80px',
     display: 'flex',
     justifyContent: 'space-between'
 }))
 
-export const DeliveryTypography = styled(Typography)(({theme})=>({
+export const DeliveryTypography = styled(Typography)(()=>({
     width: '100%',
     color: '#49524b'
 }))

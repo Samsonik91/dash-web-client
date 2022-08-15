@@ -34,8 +34,9 @@ export const popStatePrompt = (setPrompt, navigation, func, nav, data, typeForm)
     if(result) {
         if(func !== null) func()
         setPrompt(false)
-        localStorage.removeItem('adForm')
-        localStorage.removeItem('rightDesc')
+        if(localStorage.getItem('adForm')) localStorage.removeItem('adForm')
+        if(localStorage.getItem('authData')) localStorage.removeItem('authData')
+        if(localStorage.getItem('rightDesc')) localStorage.removeItem('rightDesc')
     }else{
         setPrompt(true)
         navigation(nav)

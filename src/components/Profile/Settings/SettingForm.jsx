@@ -77,7 +77,7 @@ const SettingForm = ({task, setChanges, changes}) => {
 
     return (
         <SettingItem
-            sx={{pb: showSetting ? 1 : 2}}
+            sx={{paddingBottom: showSetting ? '8px' : '16px'}}
         >
             <SettingItemTop
                 onClick={()=> setShowSetting(!showSetting)}
@@ -92,7 +92,7 @@ const SettingForm = ({task, setChanges, changes}) => {
                 {showSetting ? <ExpandLessIcon fontSize='large'/> : <ExpandMoreIcon fontSize='large'/>}
             </SettingItemTop>
             <div style={{display: showSetting ? 'block' : 'none'}}>
-                <Divider sx={{mt: 2}}/>
+                <Divider sx={{marginTop: '16px'}}/>
                 <SettingItemBottom>
                     <form onSubmit={formik.handleSubmit}>
                         {task.type === 'changeName' &&
@@ -238,7 +238,7 @@ const SettingForm = ({task, setChanges, changes}) => {
                             variant='contained'
                             type='submit'
                             disabled = {disable}
-                            sx={{mt: 2}}
+                            sx={{marginTop: '16px'}}
                         >
                             Подтвердить
                         </Button>

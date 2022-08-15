@@ -79,19 +79,19 @@ const Description = ({post, preview}) => {
                 </IconButton>
             </DateBox>
             <BottomBox>
-                <Typography variant='h4' sx={{m: 2}}>
+                <Typography variant='h4' sx={{margin: '16px'}}>
                     {post.name}
                 </Typography>
                 <PriceBox>
-                    <Typography variant='h4' sx={{m: 2}}>
+                    <Typography variant='h4' sx={{margin: '16px'}}>
                         {post.typeDeal === 'price' && post.price}
                         {post.typeDeal === 'change' && <small>Обмен</small>}
                         {post.typeDeal === 'free' && <small>Отдам даром</small>}
                     </Typography>
-                    <Typography variant='h5' sx={{mb: '18px', ml: -1}}>
+                    <Typography variant='h5' sx={{marginBottom: '18px', marginLeft: '-8px'}}>
                         {post.typeDeal === 'price' && post.currency}
                     </Typography>
-                    <Typography variant='body1' sx={{mb: '20px', ml: 4}}>
+                    <Typography variant='body1' sx={{marginBottom: '20px', marginLeft: '32px'}}>
                         {post.haggle ? 'Договорная' : null}
                     </Typography>
                 </PriceBox>
@@ -106,37 +106,20 @@ const Description = ({post, preview}) => {
                         {post.isNewItem ? 'Новый' : 'Б/у'}
                     </CharacterMiniBox>
                 </CharacterBox>
-                <Typography variant='h5' sx={{m: 2}}>
+                <Typography variant='h5' sx={{margin: '16px'}}>
                     Описание
                 </Typography>
                 <Typography
                     variant='body1'
-                    sx={{m: 2}}
+                    sx={{margin: '16px'}}
                     component='div'
                     dangerouslySetInnerHTML={{__html: post.rightDescription ? post.rightDescription : post.description}}
                 >
                 </Typography>
-                <Divider sx={{m: 2}}/>
+                <Divider sx={{margin: '16px'}}/>
             </BottomBox>
         </DescriptionBox>
     )
 }
 
 export default Description
-
-/*
-dangerouslySetInnerHTML={{__html: post.rightDescription ? post.rightDescription : post.description}}
-
-<Box sx={{border: '1px solid black'}}>
-                    {post?.isBusiness ? 'Бизнес' : 'Частное лицо'}
-                </Box>
-                <Box sx={{border: '1px solid black'}}>
-                    {post?.category.name}
-                </Box>
-                <Box sx={{border: '1px solid black'}}>
-                    {post?.isNewItem ? 'Новый' : 'Б/у'}
-                </Box>
-
-
-                {post.category.name}
- */

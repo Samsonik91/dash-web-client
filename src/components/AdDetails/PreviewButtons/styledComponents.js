@@ -4,14 +4,14 @@ export const PreviewButtonsBox = styled(Box)(({theme})=>({
     display: 'flex',
     justifyContent: 'space-between',
     width: '100%',
-    marginTop: theme.spacing(2),
+    marginTop: '16px',
     background: 'white',
-    paddingTop: theme.spacing(2),
-    paddingBottom: theme.spacing(2),
+    paddingTop: '16px',
+    paddingBottom: '16px',
     borderRadius: '4px',
     [theme.breakpoints.down('sm')]:{
         flexDirection: 'column',
-        gap: theme.spacing(2),
+        gap: '16px',
         alignItems: 'center'
     }
 }))
@@ -20,18 +20,18 @@ export const ButtonToBackForm = styled(Button)(({theme})=>({
     color: 'black',
     border: '1px solid black',
     width: 'auto',
-    marginLeft: theme.spacing(2),
+    marginLeft: '16px',
     [theme.breakpoints.down('sm')]:{
         width: '90%',
-        marginLeft: 0
+        marginLeft: '0px'
     }
 }))
 
 export const ButtonToConfirm = styled(Button)(({theme})=>({
-    marginRight: theme.spacing(2),
+    marginRight: '16px',
     width: 'auto',
     [theme.breakpoints.down('sm')]:{
         width: '90%',
-        marginRight: 0
+        marginRight: '0px'
     }
 }))

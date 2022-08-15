@@ -75,7 +75,7 @@ const AdList = ({search}) => {
             page={page}
             handlePage={handlePage}
             disable={disable}
-            numberOfPages={numberOfPages}
+            numberOfPages={numberOfPages || 10}
             handleFavorite={handleFavorite}
         />
     )

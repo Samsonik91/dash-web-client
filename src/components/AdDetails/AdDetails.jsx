@@ -94,20 +94,3 @@ const AdDetails = ({preview, setIsPrompt, socket}) => {
 }
 
 export default AdDetails
-
-/*
-originalHeight: '600px',
-                                    originalWidth: '600px',
-                                    thumbnailHeight: '100px',
-                                    thumbnailWidth: '100px'
-
-
-                                    <ImageGallery
-                            items={
-                                images.map(i=> ({original: i,
-                                    thumbnail: i
-                                }))
-                            }
-                        />
-                    </Box>
- */

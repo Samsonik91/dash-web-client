@@ -2,28 +2,26 @@ import {Box, Button, styled, TextField} from "@mui/material"
 import AccountCircleIcon from "@mui/icons-material/AccountCircle"
 import LocalPhoneRoundedIcon from "@mui/icons-material/LocalPhoneRounded";
 
-export const MessageBox = styled(Box)(({theme})=>({
+export const MessageBox = styled(Box)(()=>({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     width: '100%',
     position: 'relative',
-    marginTop: theme.spacing(2),
-    paddingTop: theme.spacing(2),
-    paddingBottom: theme.spacing(7),
+    marginTop: '16px',
+    paddingTop: '16px',
+    paddingBottom: '56px',
     background: 'white',
-    borderRadius: '4px',
-    [theme.breakpoints.down('sm')]:{
-        paddingBottom: theme.spacing(8)
-    }
+    borderRadius: '4px'
 }))
 
 export const ContactBox = styled(Box)(({theme})=>({
     width: '95%',
-    marginBottom: theme.spacing(2),
+    marginBottom: '16px',
     display: 'flex',
     [theme.breakpoints.down('sm')]:{
         flexDirection: 'column',
+        gap: '16px',
         width: '90%'
     }
 }))
@@ -33,25 +31,25 @@ export const AvatarBox = styled(Box)(()=>({
     alignItems: 'center'
 }))
 
-export const StyledAccount = styled(AccountCircleIcon)(({theme})=>({
+export const StyledAccount = styled(AccountCircleIcon)(()=>({
     color: '#54595c',
-    fontSize: 48,
-    marginRight: theme.spacing(1)
+    fontSize: '48px',
+    marginRight: '8px'
 }))
 
 export const PhoneBox = styled(Box)(({theme})=>({
     display: 'flex',
     alignItems: 'center',
-    marginRight: theme.spacing(1),
+    marginRight: '8px',
     [theme.breakpoints.down('sm')]:{
-        marginBottom: theme.spacing(2)
+        marginBottom: '16px'
     }
 }))
 
-export const StyledPhoneIcon = styled(LocalPhoneRoundedIcon)(({theme})=>({
+export const StyledPhoneIcon = styled(LocalPhoneRoundedIcon)(()=>({
     color: '#54595c',
-    p: theme.spacing(1),
-    mr: theme.spacing(1),
+    padding: '8px',
+    marginRight: '8px',
     fontSize: '28px',
     border: '1px solid #54595c',
     borderRadius: '50%'
@@ -60,9 +58,7 @@ export const StyledPhoneIcon = styled(LocalPhoneRoundedIcon)(({theme})=>({
 export const MessageField = styled(TextField)(({theme})=>({
     background: '#edf2f2',
     width: '94%',
-    [theme.breakpoints.up('sm')]:{
-        marginBottom: theme.spacing(1)
-    },
+    marginBottom: '8px',
     [theme.breakpoints.down('md')]:{
         width: '90%'
     }

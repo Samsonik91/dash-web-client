@@ -5,13 +5,13 @@ export const LocationBox = styled(Box)(()=>({
     width: '100%',
 }))
 
-export const LocationInput = styled(TextField)(({theme})=>({
+export const LocationInput = styled(TextField)(()=>({
     width: 'calc(100% + 2px)',
-    marginBottom: theme.spacing(2),
-    marginTop: theme.spacing(1)
+    marginBottom: '16px',
+    marginTop: '8px'
 }))
 
-export const CityBox = styled(Box)(({theme})=>({
+export const CityBox = styled(Box)(()=>({
     width: '100%',
     maxHeight: '180px',
     overflow: 'scroll',
@@ -20,13 +20,13 @@ export const CityBox = styled(Box)(({theme})=>({
     background: 'white',
     border: '1px solid gray',
     borderTopColor: 'white',
-    paddingTop: theme.spacing(2),
-    paddingBottom: theme.spacing(1),
+    paddingTop: '16px',
+    paddingBottom: '8px',
     mt: '-18px'
 }))
 
-export const LocationItem = styled(Typography)(({theme})=>({
-    padding: theme.spacing(1),
+export const LocationItem = styled(Typography)(()=>({
+    padding: '8px',
     width: '100%',
     '&:hover':{
         background: '#daecf2',

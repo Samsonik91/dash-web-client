@@ -146,7 +146,7 @@ const Auth = ({isPromptAuth, setIsPromptAuth, setSocket}) => {
                     variant='contained'
                     size='large'
                     fullWidth
-                    sx={{mt: 2}}
+                    sx={{marginTop: '16px'}}
                     disabled={disable}
                 >
                     {isSignUp ? 'Зарегистрироваться' : 'Войти'}
@@ -155,7 +155,7 @@ const Auth = ({isPromptAuth, setIsPromptAuth, setSocket}) => {
                     variant='subtitle1'
                     textAlign='center'
                     color={disable? 'gray' : 'darkcyan'}
-                    sx={{mt: 2, mb: 1, cursor: 'pointer'}}
+                    sx={{marginTop: '16px', marginBottom: '8px', cursor: 'pointer'}}
                     onClick={()=> !disable && setIsSignUp(!isSignUp)}
                 >
                     {isSignUp ? 'У меня уже есть аккаунт' : 'Нет аккаунта? Зарегистрируйтесь'}

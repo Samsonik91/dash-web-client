@@ -99,7 +99,7 @@ const AuthorAds = () => {
             <Typography
                 variant='h5'
                 color='gray'
-                sx={{mb: -1, mt: 4}}
+                sx={{marginBottom: '-8px', marginTop: '32px'}}
             >
                 Объявления автора
             </Typography>

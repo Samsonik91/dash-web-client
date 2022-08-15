@@ -1,9 +1,9 @@
 import {Grid, IconButton, styled} from "@mui/material"
 
-export const MainGrid = styled(Grid)(({theme})=>({
+export const MainGrid = styled(Grid)(()=>({
     textAlign: 'center',
-    marginTop: theme.spacing(3),
-    marginBottom: theme.spacing(3)
+    marginTop: '24px',
+    marginBottom: '24px'
 }))
 
 export const ButtonField = styled(IconButton)(()=>({

@@ -5,12 +5,12 @@ export const MainBox = styled(Box)(()=>({
     opacity: '0.7'
 }))
 
-export const WrapperBox = styled(Box)(({theme})=>({
+export const WrapperBox = styled(Box)(()=>({
     background: 'white',
     display: 'flex',
     flexDirection: 'column',
-    gap: theme.spacing(1),
-    padding: theme.spacing(1),
+    gap: '8px',
+    padding: '8px',
     borderRadius: '4px'
 }))
 
@@ -43,18 +43,18 @@ export const InnerBox1 = styled(Box)(()=>({
     borderRadius: '4px'
 }))
 
-export const InnerBox2 = styled(Box)(({theme})=>({
+export const InnerBox2 = styled(Box)(()=>({
     width: '50%',
     height: '24px',
     background: '#d3dbdb',
     borderRadius: '4px',
-    marginTop: theme.spacing(1)
+    marginTop: '8px'
 }))
 
-export const InnerBox3 = styled(Box)(({theme})=>({
+export const InnerBox3 = styled(Box)(()=>({
     width: '66%',
     height: '16px',
     background: '#d3dbdb',
     borderRadius: '4px',
-    marginTop: theme.spacing(1)
+    marginTop: '8px'
 }))

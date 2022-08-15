@@ -1,6 +1,6 @@
 import {Box, styled} from "@mui/material"
 
-export const MainBox = styled(Box)(({theme})=>({
+export const MainBox = styled(Box)(()=>({
     maxWidth: '500px',
     height: '300px',
     width: '100%',
@@ -9,8 +9,8 @@ export const MainBox = styled(Box)(({theme})=>({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    gap: theme.spacing(2),
-    marginTop: theme.spacing(5),
+    gap: '32px',
+    marginTop: '40px',
     background: 'white',
     borderRadius: '5px'
 }))

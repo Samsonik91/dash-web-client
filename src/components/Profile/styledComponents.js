@@ -20,10 +20,9 @@ export const InnerGrid = styled(Grid)(()=>({
 export const AdContainer = styled(Container)(({theme})=>({
     display: 'flex',
     flexDirection: 'column',
-    marginTop: theme.spacing(2),
     alignItems: 'center',
-    [theme.breakpoints.down('sm')]:{
-        marginTop: theme.spacing(0)
+    [theme.breakpoints.up('sm')]:{
+        marginTop: '16px'
     }
 }))
 

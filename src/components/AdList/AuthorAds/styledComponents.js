@@ -1,4 +1,4 @@
-import {Container, Box, styled, Avatar, Typography} from "@mui/material"
+import {Box, styled, Avatar, Typography} from "@mui/material"
 
 export const MainContainer = styled(Box)(({theme})=>({
     maxWidth: '992px',
@@ -9,32 +9,30 @@ export const MainContainer = styled(Box)(({theme})=>({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    marginTop: theme.spacing(2),
-    marginBottom: theme.spacing(2),
+    marginTop: '16px',
+    marginBottom: '16px',
     [theme.breakpoints.down('sm')]:{
         width: '92%'
     },
     [theme.breakpoints.up('md')]:{
         width: '100%',
-        marginTop: theme.spacing(4),
-        marginBottom: theme.spacing(4)
+        marginTop: '32px',
+        marginBottom: '32px'
     }
-    //gap: theme.spacing(2)
 }))
 
 export const TopAuthorBox = styled(Box)(({theme})=>({
     width: '100%',
     display: 'flex',
     justifyContent: 'start',
-    marginTop: theme.spacing(2),
+    marginTop: '16px',
     [theme.breakpoints.down('sm')]:{
-        //paddingLeft: theme.spacing(4),
         flexDirection: 'column',
         alignItems: 'center',
-        gap: theme.spacing(2)
+        gap: '16px'
     },
     [theme.breakpoints.up('sm')]:{
-        marginLeft: theme.spacing(4)
+        marginLeft: '32px'
     }
 }))
 
@@ -52,12 +50,12 @@ export const NameBox = styled(Box)(({theme})=>({
         alignItems: 'center'
     },
     [theme.breakpoints.up('sm')]:{
-        marginLeft: theme.spacing(3),
+        marginLeft: '24px',
     }
 }))
 
 export const LocationTypography = styled(Typography)(({theme})=>({
     [theme.breakpoints.down('sm')]:{
-        marginTop: theme.spacing(2)
+        marginTop: '16px'
     }
 }))

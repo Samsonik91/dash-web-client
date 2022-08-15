@@ -91,7 +91,7 @@ const SkeletonDetails = () => {
                     <DateBox sx={{width: '70%'}}/>
                 </ProfileBox>
                 <DeliverySkeleton>
-                    <DescriptionLinear sx={{width: '80%', mb: 2}}/>
+                    <DescriptionLinear sx={{width: '80%', marginBottom: '16px'}}/>
                     {deliveries.map((d,i)=>(
                         <DescriptionLinear
                             key={Math.random()+i}
@@ -100,7 +100,7 @@ const SkeletonDetails = () => {
                     ))}
                 </DeliverySkeleton>
                 <DeliverySkeleton>
-                    <DescriptionLinear sx={{width: '80%', mb: 2}}/>
+                    <DescriptionLinear sx={{width: '80%', marginBottom: '16px'}}/>
                     <Characteristics sx={{width: '100%'}}>
                         <MapBox key={Math.random()}/>
                         <MapBox key={Math.random()}/>

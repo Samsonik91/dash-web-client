@@ -55,7 +55,7 @@ const LargeScreen = ({conversations,
                         <Typography
                             variant='h6'
                             color='gray'
-                            sx={{p: 2}}
+                            sx={{padding: '16px'}}
                         >
                             У вас покаместь нет диалогов с продавцами или покупателями.
                         </Typography>}
@@ -65,7 +65,7 @@ const LargeScreen = ({conversations,
                 <ChatWrapperBox>
                     {currentChat ?
                         <>
-                            <Box sx={{mt: 2, mr: 2}}>
+                            <Box sx={{marginTop: '16px', marginRight: '16px'}}>
                                 <ConversationItem
                                     currentChat={currentChat}
                                     setCurrentChat={setCurrentChat}

@@ -3,9 +3,12 @@ import {Box, Button, styled} from "@mui/material"
 
 const MainBox = styled(Box)(({theme})=>({
     background: 'white',
-    padding: theme.spacing(4),
-    marginTop: theme.spacing(2),
-    borderRadius: theme.spacing(1)
+    padding: '32px',
+    marginTop: '16px',
+    borderRadius: '8px',
+    [theme.breakpoints.down('sm')]:{
+        padding: '16px'
+    }
 }))
 
 const InnerBox = styled(Box)(()=>({

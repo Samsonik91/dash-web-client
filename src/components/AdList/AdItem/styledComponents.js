@@ -1,7 +1,7 @@
 import {Box, Grid, IconButton, styled, Typography} from "@mui/material"
 
-export const MainGrid = styled(Grid)(({theme})=>({
-    padding: theme.spacing(2),
+export const MainGrid = styled(Grid)(()=>({
+    padding: '16px',
     background: 'white',
     borderRadius: '4px',
     border: '1px solid #4e5052'
@@ -27,43 +27,42 @@ export const DescriptionGrid = styled(Grid)(({theme})=>({
 }))
 
 export const TextName = styled(Typography)(({theme})=>({
-    paddingRight: theme.spacing(2),
-    paddingLeft: theme.spacing(2),
-    marginTop: theme.spacing(0),
+    paddingRight: '16px',
+    paddingLeft: '16px',
     cursor: 'pointer',
     [theme.breakpoints.down('sm')]:{
-        marginTop: theme.spacing(2)
+        marginTop: '16px'
     },
     '&:hover': {
         color: '#455bed'
     }
 }))
 
-export const LocationBox = styled(Box)(({theme})=>({
+export const LocationBox = styled(Box)(()=>({
     position: 'absolute',
     bottom: '-4px',
-    left: theme.spacing(2),
+    left: '16px',
     display: 'flex',
     alignItems: 'end',
     flexWrap: 'wrap'
 }))
 
-export const TextDate = styled(Typography)(({theme})=>({
+export const TextDate = styled(Typography)(()=>({
     marginBottom: '4px',
-    marginLeft: theme.spacing(1)
+    marginLeft: '8px'
 }))
 
 export const PriceBox = styled(Box)(({theme})=>({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'start',
-    paddingLeft: theme.spacing(1),
+    paddingLeft: '8px',
     [theme.breakpoints.down('md')]:{
-        paddingLeft: theme.spacing(3)
+        paddingLeft: '24px'
     },
     [theme.breakpoints.down('sm')]:{
-        paddingLeft: theme.spacing(2),
-        marginTop: theme.spacing(2),
+        paddingLeft: '16px',
+        marginTop: '16px',
     }
 }))
 
@@ -81,8 +80,8 @@ export const PriceText = styled(Typography)(()=>({
 export const TypeDeal = styled(Typography)(({theme})=>({
     fontWeight: 'bold',
     [theme.breakpoints.down('sm')]: {
-        marginTop: theme.spacing(2),
-        marginLeft: theme.spacing(2)
+        marginTop: '16px',
+        marginLeft: '16px'
     }
 }))
 

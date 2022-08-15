@@ -1,17 +1,17 @@
 import {Avatar, Box, Button, styled} from "@mui/material"
 
-export const PhotoBox = styled(Box)(({theme})=>({
+export const PhotoBox = styled(Box)(()=>({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    gap: theme.spacing(1)
+    gap: '8px'
 }))
 
-export const PhotoButtons = styled(Box)(({theme})=>({
+export const PhotoButtons = styled(Box)(()=>({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'start',
-    gap: theme.spacing(1)
+    gap: '8px'
 }))
 
 export const ProfileAvatar = styled(Avatar)(()=>({
@@ -25,8 +25,8 @@ export const ButtonBox = styled(Box)(()=>({
     width: '100%'
 }))
 
-export const AvatarButton = styled(Button)(({theme})=>({
-    marginRight: theme.spacing(3),
+export const AvatarButton = styled(Button)(()=>({
+    marginRight: '24px',
     paddingTop: 0,
     paddingBottom: 0
 }))

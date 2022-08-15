@@ -108,7 +108,7 @@ const LocationSettings = ({changes, setChanges}) => {
     }
 
     return (
-        <SettingItem sx={{pb: showSetting ? 1 : 2}}>
+        <SettingItem sx={{paddingBottom: showSetting ? '8px' : '16px'}}>
             <SettingItemTop onClick={()=> setShowSetting(!showSetting)}>
                 <Typography variant='h6'>
                     Изменить место нахождения
@@ -116,7 +116,7 @@ const LocationSettings = ({changes, setChanges}) => {
                 {showSetting ? <ExpandLessIcon fontSize='large'/> : <ExpandMoreIcon fontSize='large'/>}
             </SettingItemTop>
             <div style={{display: showSetting ? 'block' : 'none'}}>
-                <Divider sx={{mt: 2}}/>
+                <Divider sx={{marginTop: '16px'}}/>
                 <SettingItemBottom>
                     <form>
                         <InnerFieldBox>
@@ -158,7 +158,7 @@ const LocationSettings = ({changes, setChanges}) => {
                             type='submit'
                             disabled={disable}
                             onClick={sendLocation}
-                            sx={{mt: 2}}
+                            sx={{marginTop: '16px'}}
                         >
                             Подтвердить
                         </Button>

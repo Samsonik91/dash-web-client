@@ -1,19 +1,19 @@
 import {Box, Grid, styled} from "@mui/material"
 
-export const MainBox = styled(Box)(({theme})=>({
+export const MainBox = styled(Box)(()=>({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    marginTop: theme.spacing(2)
+    marginTop: '16px'
 }))
 
-export const AdsGrid = styled(Grid)(({theme})=>({
+export const AdsGrid = styled(Grid)(()=>({
     margin: 'auto',
-    marginTop: theme.spacing(2),
-    rowGap: theme.spacing(1),
+    marginTop: '16px',
+    rowGap: '8px',
     width: '101%'
 }))
 
-export const StyledGrid = styled(Grid)(({theme})=>({
-    paddingRight: theme.spacing(1)
+export const StyledGrid = styled(Grid)(()=>({
+    paddingRight: '16px'
 }))

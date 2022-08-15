@@ -5,17 +5,17 @@ export const MainBox = styled(Container)(({theme})=>({
     background: 'white',
     borderRadius: '4px',
     display: 'flex',
-    padding: theme.spacing(2),
-    marginTop: theme.spacing(2),
-    marginBottom: theme.spacing(2),
+    padding: '16px',
+    marginTop: '16px',
+    marginBottom: '16px',
     flexDirection: 'column',
-    gap: theme.spacing(2),
+    gap: '16px',
     [theme.breakpoints.down('sm')]:{
         width: '94%'
     }
 }))
 
-export const ChatMenu = styled(Box)(({theme})=>({
+export const ChatMenu = styled(Box)(()=>({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'start',
@@ -25,12 +25,12 @@ export const ChatMenu = styled(Box)(({theme})=>({
     borderRadius: '4px'
 }))
 
-export const ChatBox = styled(Box)(({theme})=>({
+export const ChatBox = styled(Box)(()=>({
     display: 'flex',
     flexDirection: 'column'
 }))
 
-export const ChatMessagesBox = styled(Box)(({theme})=>({
+export const ChatMessagesBox = styled(Box)(()=>({
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
@@ -39,16 +39,16 @@ export const ChatMessagesBox = styled(Box)(({theme})=>({
     border: '1px solid gray',
 }))
 
-export const CreateBox = styled(Box)(({theme})=>({
+export const CreateBox = styled(Box)(()=>({
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    gap: theme.spacing(1)
+    gap: '8px'
 }))
 
-export const MessageButton = styled(Button)(({theme})=>({
-    marginTop: theme.spacing(2),
+export const MessageButton = styled(Button)(()=>({
+    marginTop: '16px',
     width: '150px'
 }))
 

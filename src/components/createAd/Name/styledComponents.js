@@ -1,18 +1,18 @@
 import {Box, styled, TextField} from "@mui/material"
 
-export const MainBox = styled(Box)(({theme})=>({
+export const MainBox = styled(Box)(()=>({
     background: 'white',
-    padding: theme.spacing(2),
-    paddingLeft: theme.spacing(4),
-    paddingRight: theme.spacing(4),
-    borderRadius: theme.spacing(1),
-    marginBottom: theme.spacing(2)
+    padding: '16px',
+    paddingLeft: '32px',
+    paddingRight: '32px',
+    borderRadius: '8px',
+    marginBottom: '16px'
 }))
 
 export const NameField = styled(TextField)(({theme})=>({
     width: '75%',
-    marginBottom: theme.spacing(2),
-    marginTop: theme.spacing(1),
+    marginBottom: '16px',
+    marginTop: '8px',
     [theme.breakpoints.down('sm')]:{
         width: '100%'
     },

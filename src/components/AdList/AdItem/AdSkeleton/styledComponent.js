@@ -7,11 +7,11 @@ export const MainContainer = styled(Container)(({theme})=>({
     background: 'white',
     borderRadius: '5px',
     display: 'flex',
-    paddingTop: theme.spacing(2),
-    paddingBottom: theme.spacing(2),
+    paddingTop: '16px',
+    paddingBottom: '16px',
     [theme.breakpoints.down('sm')]:{
         flexDirection: 'column',
-        gap: theme.spacing(3)
+        gap: '24px'
     }
 }))
 
@@ -28,7 +28,7 @@ export const PhotoBox = styled(Box)(({theme})=>({
     width: 'calc(100% + 8px)',
     borderRadius: '4px',
     [theme.breakpoints.up('sm')]:{
-        marginLeft: theme.spacing(-1),
+        marginLeft: '-8px',
     },
     [theme.breakpoints.down('sm')]:{
         width: '100%'
@@ -45,17 +45,17 @@ export const NameContainer = styled(Box)(({theme})=>({
         flex: 6
     },
     [theme.breakpoints.down('sm')]:{
-        gap: theme.spacing(1)
+        gap: '8px'
     }
 }))
 
 export const NameBox = styled(Box)(({theme})=>({
     width: '95%',
     background: '#d3dbdb',
-    height: theme.spacing(4),
+    height: '32px',
     borderRadius: '4px',
     [theme.breakpoints.up('sm')]:{
-        marginLeft: theme.spacing(2)
+        marginLeft: '16px'
     }
 }))
 
@@ -63,9 +63,9 @@ export const LocationBox = styled(Box)(({theme})=>({
     width: '60%',
     background: '#d3dbdb',
     borderRadius: '4px',
-    height: theme.spacing(4),
+    height: '32px',
     [theme.breakpoints.up('sm')]:{
-        marginLeft: theme.spacing(2)
+        marginLeft: '16px'
     }
 }))
 
@@ -79,15 +79,15 @@ export const PriceContainer = styled(Box)(({theme})=>({
         flex: 2
     },
     [theme.breakpoints.up('sm')]:{
-        paddingLeft: theme.spacing(4)
+        paddingLeft: '32px'
     }
 }))
 
 export const PriceBox = styled(Box)(({theme})=>({
-    marginRight: theme.spacing(-1),
+    marginRight: '-8px',
     display: 'flex',
     flexDirection: 'column',
-    gap: theme.spacing(1),
+    gap: '8px',
     [theme.breakpoints.down('sm')]:{
         alignItems: 'start'
     }
@@ -95,21 +95,21 @@ export const PriceBox = styled(Box)(({theme})=>({
 
 export const NumberPrice = styled(Box)(({theme})=>({
     width: '100%',
-    height: theme.spacing(5),
+    height: '40px',
     background: '#d3dbdb',
     borderRadius: '4px',
     [theme.breakpoints.down('sm')]:{
         width: '25%',
     },
     [theme.breakpoints.up('sm')]:{
-        marginRight: theme.spacing(-1)
+        marginRight: '-8px'
     }
 }))
 
 export const DealBox = styled(Box)(({theme})=>({
-    marginRight: theme.spacing(-1),
+    marginRight: '-8px',
     width: '100%',
-    height: theme.spacing(2),
+    height: '16px',
     background: '#d3dbdb',
     borderRadius: '4px',
     [theme.breakpoints.down('sm')]:{
@@ -120,8 +120,8 @@ export const DealBox = styled(Box)(({theme})=>({
 export const IconBox = styled(Box)(({theme})=>({
     textAlign: 'end',
     position: 'absolute',
-    right: theme.spacing(1),
-    bottom: 0,
+    right: '8px',
+    bottom: '0px',
     [theme.breakpoints.up('sm')]:{
         position: 'block'
     }

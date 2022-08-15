@@ -3,20 +3,20 @@ import DeleteForeverIcon from "@mui/icons-material/DeleteForever"
 
 export const MainBox = styled(Box)(({theme})=>({
     background: 'white',
-    padding: theme.spacing(2),
-    paddingLeft: theme.spacing(4),
-    paddingRight: theme.spacing(4),
-    marginBottom: theme.spacing(2),
-    borderRadius: theme.spacing(1)
+    padding: '16px',
+    paddingLeft: '32px',
+    paddingRight: '32px',
+    marginBottom: '16px',
+    borderRadius: '8px'
 }))
 
 export const PhotosBox = styled(Box)(({theme})=>({
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'start',
-    gap: theme.spacing(1),
-    marginTop: theme.spacing(2),
-    marginBottom: theme.spacing(2)
+    gap: '8px',
+    marginTop: '16px',
+    marginBottom: '16px'
 }))
 
 export const DeleteBox = styled(Box)(()=>({

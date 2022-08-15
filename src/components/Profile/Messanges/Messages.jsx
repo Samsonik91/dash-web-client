@@ -90,7 +90,9 @@ const Messages = React.memo(({socket, setSocket}) => {
     },[currentChat])
 
     useEffect(()=>{
-        !socket && setSocket(io("ws://localhost:8800"))
+        const IS_PROD = process.env.NODE_ENV === "production"
+        const URL = IS_PROD ? "https://socket-dashboard-project.herokuapp.com" : "ws://localhost:8800"
+        !socket && setSocket(io((URL)))
     },[])
 
     useEffect(()=>{
@@ -107,7 +109,7 @@ const Messages = React.memo(({socket, setSocket}) => {
 
     return (
         <>
-            <ViewBoxLarge>
+            <ViewBoxLarge sx={{marginBottom: '56px'}}>
                 <LargeScreen
                     conversations={conversations}
                     unread={unread}

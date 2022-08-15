@@ -112,7 +112,8 @@ const CreateAd = ({isPrompt, setIsPrompt}) => {
 
     useEffect(()=>{
         if(isPrompt){
-            localStorage.setItem('adForm', JSON.stringify(postData))
+            const data = {...postData, files: []}
+            localStorage.setItem('adForm', JSON.stringify(data))
         }
     },[postData])
 
@@ -136,10 +137,10 @@ const CreateAd = ({isPrompt, setIsPrompt}) => {
 
     return (
         <MainBox>
-            <Container maxWidth='md' sx={{m: 2, mt: 4}}>
+            <Container maxWidth='md' sx={{margin: '16px', marginTop: '32px'}}>
                 <form>
                     <InnerBox>
-                        <Box sx={{mb: 2}}>
+                        <Box sx={{marginBottom: '16px'}}>
                             <Typography variant='h4'>Создать объявление</Typography>
                         </Box>
                         <Box>

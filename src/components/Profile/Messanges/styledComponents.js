@@ -18,86 +18,86 @@ export const Messanger = styled(Container)(({theme})=>({
     minHeight: '500px',
     display: 'flex',
     width: '99%',
-    marginTop: theme.spacing(3),
-    marginBottom: theme.spacing(3),
+    marginTop: '24px',
+    marginBottom: '24px',
     [theme.breakpoints.down('sm')]:{
         flexDirection: 'column',
-        gap: theme.spacing(2),
+        gap: '16px',
         background: 'white',
         width: '94%',
-        marginTop: theme.spacing(2),
-        marginBottom: theme.spacing(2),
+        marginTop: '16px',
+        marginBottom: '16px',
     },
     [theme.breakpoints.up('md')]:{
         width: '100%',
-        marginTop: theme.spacing(3),
-        marginBottom: theme.spacing(5)
+        marginTop: '24px',
+        marginBottom: '40px'
     }
 }))
 
-export const ChatMenu = styled(Box)(({theme})=>({
+export const ChatMenu = styled(Box)(()=>({
     flex: 4
 }))
 
-export const ChatBox = styled(Box)(({theme})=>({
+export const ChatBox = styled(Box)(()=>({
     flex: 8,
 }))
 
-export const ChatBoxBadge = styled(Box)(({theme})=>({
+export const ChatBoxBadge = styled(Box)(()=>({
     display: 'flex',
     width: '100%',
     background: '#dce0e6',
-    paddingBottom: theme.spacing(2),
+    paddingBottom: '16px',
     border: '1px solid grey',
     borderTopRightRadius: '3px',
     borderTopLeftRadius: '3px',
     marginBottom: '-1px'
 }))
 
-export const ChatBoxTop = styled(Box)(({theme})=>({
+export const ChatBoxTop = styled(Box)(()=>({
     height: '400px',
     marginRight: '-2px',
     overflowY: 'scroll',
-    paddingLeft: theme.spacing(2),
-    paddingRight: theme.spacing(2),
+    paddingLeft: '16px',
+    paddingRight: '16px',
     border: '1px solid grey',
     borderBottomRightRadius: '3px',
     borderBottomLeftRadius: '3px',
 }))
 
-export const ChatBoxBottom = styled(Box)(({theme})=>({
+export const ChatBoxBottom = styled(Box)(()=>({
     display: 'flex',
-    gap: theme.spacing(1),
+    gap: '8px',
     flexDirection: 'column',
-    paddingRight: theme.spacing(2),
-    marginLeft: theme.spacing(-1),
-    marginTop: theme.spacing(1),
+    paddingRight: '16px',
+    marginLeft: '-8px',
+    marginTop: '8px',
     alignItems: 'end',
 }))
 
-export const DeletedMessage = styled(Box)(({theme})=>({
+export const DeletedMessage = styled(Box)(()=>({
     display: 'flex',
-    marginTop: theme.spacing(2),
-    marginBottom: theme.spacing(2)
+    marginTop: '16px',
+    marginBottom: '16px'
 }))
 
-export const DeletedTypography = styled(Typography)(({theme})=>({
-    padding: theme.spacing(2),
-    borderRadius: theme.spacing(2),
-    marginTop: theme.spacing(4),
+export const DeletedTypography = styled(Typography)(()=>({
+    padding: '16px',
+    borderRadius: '16px',
+    marginTop: '32px',
     background: '#dce0e6'
 }))
 
-export const ChatTextArea = styled(TextField)(({theme})=>({
+export const ChatTextArea = styled(TextField)(()=>({
     width: '98.8%',
-    paddingTop: theme.spacing(1)
+    paddingTop: '8px'
 }))
 
-export const ChatWrapperBox = styled(Box)(({theme})=>({
+export const ChatWrapperBox = styled(Box)(()=>({
     display: 'flex',
     flexDirection: 'column',
-    padding: theme.spacing(1),
-    paddingRight: theme.spacing(3),
+    padding: '16px',
+    paddingRight: '24px',
     background: 'white',
     height: '100%'
 }))

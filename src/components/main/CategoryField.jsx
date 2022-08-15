@@ -16,12 +16,12 @@ import FieldGrid from "./FieldGrid"
 
 const FieldBox = styled(Container)(({theme})=>({
     background: 'white',
-    padding: theme.spacing(3),
-    marginTop: theme.spacing(3),
-    marginBottom: theme.spacing(3),
-    marginLeft: theme.spacing(3),
-    marginRight: theme.spacing(3),
-    borderRadius: 5,
+    padding: '24px',
+    marginTop: '24px',
+    marginBottom: '24px',
+    marginLeft: '24px',
+    marginRight: '24px',
+    borderRadius: '5px',
     [theme.breakpoints.down("md")]:{
         width: '90%'
     }

@@ -5,8 +5,8 @@ export const AddButton = styled(Button)(({theme})=>({
     background: 'yellow',
     height: '80%',
     color: 'black',
-    marginLeft: 15,
-    borderRadius: 5,
+    marginLeft: '15px',
+    borderRadius: '5px',
     fontWeight: "bold",
     [theme.breakpoints.down("md")]: {
         display: "none",
@@ -27,7 +27,8 @@ export const Search = styled('div')(({theme})=>({
 
 export const SearchButton = styled(Button)(()=>({
     background: 'yellow',
-    m: 0, color: 'black',
+    margin: 0,
+    color: 'black',
     borderBottomLeftRadius: 0,
     borderTopLeftRadius: 0,
     fontWeight: 600,
@@ -40,13 +41,13 @@ export const StyledSearchIcon = styled(SearchIcon)(()=>({
     position: 'absolute',
     color: 'gray',
     opacity: 0.7,
-    top: 24
+    top: '24px'
 }))
 
 export const SearchIconButton = styled(IconButton)(({theme})=>({
     display: 'none',
     color: 'white',
-    paddingTop: theme.spacing(2),
+    paddingTop: '16px',
     [theme.breakpoints.down('lg')]: {
         display: 'block',
     }
@@ -69,5 +70,5 @@ export const MenuItemSearchIcon = styled(SearchIcon)(()=>({
     position: 'absolute',
     color: 'gray',
     opacity: 0.7,
-    top: 12
+    top: '12px'
 }))

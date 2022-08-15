@@ -85,7 +85,7 @@ const Message = ({phone, contactFace, avatar, owner, id, socket, preview}) => {
             >
                 {avatar ? (
                         <AvatarBox>
-                            <Avatar sx={{mr: 1}}/>
+                            <Avatar sx={{marginRight: '8px'}}/>
                             <Typography variant='h5'>{contactFace}</Typography>
                         </AvatarBox>)
                         :

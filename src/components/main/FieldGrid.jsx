@@ -1,7 +1,7 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom'
 import {Typography} from "@mui/material"
-import {ButtonField, MainGrid} from "./FieldGrid/styledComponents"
+import {ButtonField, MainGrid} from "./styledComponents"
 
 const FieldGrid = ({child, text, category}) => {
 

@@ -35,20 +35,23 @@ const CreateMessage = React.memo(({handleSubmit, deleteMessages}) => {
                     <Button
                         variant='contained'
                         onClick={addMessage}
-                        sx={{ml: 2}}
+                        sx={{marginLeft: '16px'}}
                     >
                         Отправить
                     </Button>
                 </ButtonBox>
             </ChatBoxBottom>
-            <Button
-                variant='contained'
-                onClick={deleteMessages}
-            >
-                Удалить сообщения
-            </Button>
         </>
     )
 })
 
 export default CreateMessage
+
+/*
+<Button
+                variant='contained'
+                onClick={deleteMessages}
+            >
+                Удалить сообщения
+            </Button>
+ */

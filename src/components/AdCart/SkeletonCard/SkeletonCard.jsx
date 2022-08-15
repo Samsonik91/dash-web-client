@@ -23,7 +23,7 @@ const SkeletonCard = () => {
                     />
                 </StyledCardMedia>
                 <NameSkeleton/>
-                <Box sx={{mt: 4}}>
+                <Box sx={{marginTop: '32px'}}>
                     <InnerBox1/>
                     <InnerBox2/>
                     <InnerBox3/>

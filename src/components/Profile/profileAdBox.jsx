@@ -51,7 +51,7 @@ const ProfileAdBox = () => {
                     ))
                 }
             </MainBox>
-            <Stack spacing={2} sx={{mt: 2}}>
+            <Stack spacing={2} sx={{marginTop: '16px'}}>
                 <Pagination
                     disabled={isFetching || !ads || ads?.length<1 ? true : false}
                     count={numberOfPages || 10}

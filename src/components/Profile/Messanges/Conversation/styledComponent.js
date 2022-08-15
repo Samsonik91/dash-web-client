@@ -6,8 +6,8 @@ export const ConversationBox = styled(Box)(({theme})=>({
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: theme.spacing(1),
-    marginTop: theme.spacing(2),
+    padding: '8px',
+    marginTop: '16px',
     cursor: 'pointer',
     borderRadius: '3px',
     '&:hover':{
@@ -21,10 +21,10 @@ export const ConversationBox = styled(Box)(({theme})=>({
     }
 }))
 
-export const ConversationAvatar = styled(Avatar)(({theme})=>({
-    width: 60,
-    height: 60,
-    marginRight: theme.spacing(1)
+export const ConversationAvatar = styled(Avatar)(()=>({
+    width: '60px',
+    height: '60px',
+    marginRight: '8px'
 }))
 
 export const NameBox = styled(Box)(({theme})=>({

@@ -3,19 +3,19 @@ import {Box, Grid, styled} from "@mui/material"
 export const MainGrid = styled(Grid)(({theme})=>({
     margin: 'auto',
     [theme.breakpoints.up('sm')]:{
-        marginTop: theme.spacing(2)
+        marginTop: '16px'
     }
 }))
 
 export const AdGrid = styled(Grid)(({theme})=>({
-    padding: theme.spacing(2),
+    padding: '16px',
     [theme.breakpoints.up('sm')]:{
-        padding: theme.spacing(1),
-        marginBottom: theme.spacing(2)
+        padding: '8px',
+        marginBottom: '16px'
     }
 }))
 
-export const AdBox = styled(Box)(({theme})=>({
+export const AdBox = styled(Box)(()=>({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -24,9 +24,9 @@ export const AdBox = styled(Box)(({theme})=>({
 }))
 
 export const ProfileGrid = styled(Grid)(({theme})=>({
-    padding: theme.spacing(1),
+    padding: '8px',
     [theme.breakpoints.down('sm')]:{
-        padding: theme.spacing(2),
-        marginTop: theme.spacing(-2),
+        padding: '16px',
+        marginTop: '-16px',
     }
 }))

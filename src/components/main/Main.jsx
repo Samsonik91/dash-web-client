@@ -6,7 +6,7 @@ import RecentAds from "./RecentAds/RecentAds"
 const MainBox = styled(Box)(({theme})=>({
     width: '90%',
     margin: 'auto',
-    marginBotton: theme.spacing(3),
+    marginBottom: '24px',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',

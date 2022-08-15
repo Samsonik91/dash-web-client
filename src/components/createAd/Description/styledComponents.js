@@ -1,17 +1,17 @@
 import {Box, styled, TextField} from "@mui/material"
 
-export const MainBox = styled(Box)(({theme})=>({
+export const MainBox = styled(Box)(()=>({
     background: 'white',
-    padding: theme.spacing(2),
-    paddingLeft: theme.spacing(4),
-    paddingRight: theme.spacing(4),
-    marginBottom: theme.spacing(2),
-    borderRadius: theme.spacing(1)
+    padding: '16px',
+    paddingLeft: '32px',
+    paddingRight: '32px',
+    marginBottom: '16px',
+    borderRadius: '8px'
 }))
 
-export const DescriptionField = styled(TextField)(({theme})=>({
+export const DescriptionField = styled(TextField)(()=>({
     maxWidth: '100%',
     fontSize: '1.1em',
-    padding: theme.spacing(2),
-    marginLeft: theme.spacing(-2)
+    padding: '16px',
+    marginLeft: '-16px'
 }))

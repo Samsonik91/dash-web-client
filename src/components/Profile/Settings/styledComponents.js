@@ -3,18 +3,18 @@ import {Box, Container, Divider, styled, TextField} from "@mui/material"
 export const MainContainer = styled(Container)(({theme})=>({
     display: 'flex',
     flexDirection: 'column',
-    gap: theme.spacing(2),
+    gap: '16px',
     alignItems: 'center',
     margin: 'auto',
-    marginTop: theme.spacing(3),
-    marginBottom: theme.spacing(3),
+    marginTop: '24px',
+    marginBottom: '24px',
     [theme.breakpoints.down('md')]:{
         width: '96%'
     },
     [theme.breakpoints.down('sm')]:{
         width: '92%',
-        marginTop: theme.spacing(2),
-        marginBottom: theme.spacing(2)
+        marginTop: '16px',
+        marginBottom: '16px'
     }
 }))
 
@@ -24,25 +24,25 @@ export const ProfileTop = styled(Box)(({theme})=>({
     justifyContent: 'space-between',
     borderRadius: '4px',
     background: 'white',
-    padding: theme.spacing(2),
+    padding: '16px',
     [theme.breakpoints.down('sm')]:{
         flexDirection: 'column'
     }
 }))
 
-export const ProfilePart1 = styled(Box)(({theme})=>({
+export const ProfilePart1 = styled(Box)(()=>({
     flex: 4,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'space-between',
-    gap: theme.spacing(2)
+    gap: '16px'
 }))
 
 export const ProfileDivider = styled(Divider)(({theme})=>({
     display: 'none',
-    marginTop: theme.spacing(2),
-    marginBottom: theme.spacing(2),
+    marginTop: '16px',
+    marginBottom: '16px',
     [theme.breakpoints.down('sm')]:{
         display: 'block'
     }
@@ -56,22 +56,22 @@ export const ProfilePart2 = styled(Box)(({theme})=>({
     justifyContent: 'space-between',
     [theme.breakpoints.down('sm')]:{
         alignItems: 'center',
-        gap: theme.spacing(2)
+        gap: '16px'
     }
 }))
 
-export const TypographyBox = styled(Box)(({theme})=>({
+export const TypographyBox = styled(Box)(()=>({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'start',
-    gap: theme.spacing(1)
+    gap: '8px'
 }))
 
-export const SettingItem = styled(Box)(({theme})=>({
+export const SettingItem = styled(Box)(()=>({
     width: '100%',
     background: 'white',
     borderRadius: '4px',
-    padding: theme.spacing(2),
+    padding: '16px',
 }))
 
 export const SettingItemTop = styled(Box)(()=>({
@@ -81,24 +81,24 @@ export const SettingItemTop = styled(Box)(()=>({
     cursor: 'pointer'
 }))
 
-export const SettingItemBottom = styled(Box)(({theme})=>({
+export const SettingItemBottom = styled(Box)(()=>({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'start',
-    gap: theme.spacing(2),
-    paddingTop: theme.spacing(2),
-    paddingBottom: theme.spacing(1)
+    gap: '16px',
+    paddingTop: '16px',
+    paddingBottom: '8px'
 }))
 
-export const InnerFieldBox = styled(Box)(({theme})=>({
+export const InnerFieldBox = styled(Box)(()=>({
     width: '300px',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'start',
-    gap: theme.spacing(2)
+    gap: '16px'
 }))
 
-export const InnerFieldBoxItem = styled(Box)(({theme})=>({
+export const InnerFieldBoxItem = styled(Box)(()=>({
     width: '100%',
     display: 'flex',
     flexDirection: 'column',

@@ -6,9 +6,9 @@ export const MainBox = styled(Box)(()=>({
     alignItems: 'center'
 }))
 
-export const MainContainer = styled(Container)(({theme})=>({
-    margin: theme.spacing(2),
-    mt: theme.spacing(4)
+export const MainContainer = styled(Container)(()=>({
+    margin: '16px',
+    mt: '32px'
 }))
 
 export const InnerBox = styled(Box)(()=>({

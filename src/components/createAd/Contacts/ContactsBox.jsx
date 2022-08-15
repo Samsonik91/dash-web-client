@@ -89,7 +89,7 @@ const ContactsBox = ({postData,
 
     return (
         <MainBox>
-            <Typography variant='h6' sx={{mb: 2}}>
+            <Typography variant='h6' sx={{marginBottom: '16px'}}>
                 Контактная информация
             </Typography>
             <Box>
@@ -141,7 +141,7 @@ const ContactsBox = ({postData,
                     helperText={phoneHelperText}
                     error={phoneError}
                     InputProps={{
-                        startAdornment: <InputAdornment position='start' sx={{mt: '2px'}}>+38</InputAdornment>
+                        startAdornment: <InputAdornment position='start' sx={{marginTop: '2px'}}>+38</InputAdornment>
                     }}
                 />
             </Box>

@@ -14,12 +14,18 @@ const SearchMenu = ({handleSearchValue, searchByTags, search}) => {
     const [anchorEl, setAnchorEl] = useState(null)
 
     const handleOpenMenu = e => setAnchorEl(e.currentTarget)
-    const handleCloseMenu = () => setAnchorEl(null)
+    const handleCloseMenu = (e) => {
+        if(e.currentTarget.className === 'search-input' && e.currentTarget.className !== 'search-button'){
+            return false
+        }else{
+            setAnchorEl(null)
+        }
+    }
 
     window.addEventListener('resize', handleCloseMenu)
 
-    const handleSearch = () => {
-        handleCloseMenu()
+    const handleSearch = (e) => {
+        handleCloseMenu(e)
         searchByTags()
     }
 
@@ -35,6 +41,7 @@ const SearchMenu = ({handleSearchValue, searchByTags, search}) => {
                 id='search-menu'
                 open={Boolean(anchorEl)}
                 anchorEl={anchorEl}
+                className='search-input'
                 onClose={handleCloseMenu}
             >
                 <StyledMenuItem>
@@ -42,11 +49,14 @@ const SearchMenu = ({handleSearchValue, searchByTags, search}) => {
                         <MenuItemSearchIcon/>
                         <InputBase
                             placeholder='Поиск на сайте'
-                            sx={{pl: 4}}
+                            sx={{paddingLeft: '32px'}}
                             onChange={handleSearchValue}
                             value={search}
                         />
-                        <SearchButton onClick={handleSearch}>Найти</SearchButton>
+                        <SearchButton
+                            onClick={handleSearch}
+                            className='search-button'
+                        >Найти</SearchButton>
                     </MenuInnerBox>
                 </StyledMenuItem>
             </Menu>

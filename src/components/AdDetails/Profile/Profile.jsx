@@ -26,7 +26,6 @@ const Profile = ({contactFace, delivery, location, sinceFromUser, author, previe
 
     const interlocutor = useSelector(({user})=> user?.interlocutor)
     const userAvatar = useSelector(({user})=> user?.avatar)
-    const disable = useSelector(({user})=> user?.disable)
     const user = JSON.parse(localStorage.getItem('profile'))
 
     const handleDelivery = () => {
@@ -72,30 +71,30 @@ const Profile = ({contactFace, delivery, location, sinceFromUser, author, previe
             <ProfileBox>
                 <Avatar
                     src={interlocutor?.avatar || userAvatar || null}
-                    sx={{width: 70, height: 70}}
+                    sx={{width: '70px', height: '70px'}}
                 />
                 <Typography variant='h5'>{contactFace}</Typography>
                 <Typography
                     variant='body2'
-                    sx={{mt: -2}}
+                    sx={{marginTop: '-16px'}}
                 >{`На сайте с ${sinceFromUser}`}</Typography>
                 <RowToAds onClick={()=> navigate(`/adList/author/${author}`)}>
                     <Typography variant='body1'>Другие объявления автора</Typography>
                     <ArrowForwardIosIcon
                         fontSize='small'
-                        sx={{ml: 1, mb: '2px'}}
+                        sx={{marginLeft: '8px', marginBottom: '2px'}}
                     />
                 </RowToAds>
             </ProfileBox>
             <DeliveryBox>
                 <Typography variant='h5'>Способы доставки</Typography>
-                <Box sx={{mt: 2}}>
+                <Box sx={{marginTop: '16px'}}>
                     {box.map((b,i)=> (
                         <ItemDelivery key={Math.random() + i}>
-                            <img src={b.logo} style={{width: 30}}/>
+                            <img src={b.logo} style={{width: '30px'}}/>
                             <Typography
                                 variant='subtitle1'
-                                sx={{ml: 2}}
+                                sx={{marginLeft: '16px'}}
                             >{b.post}</Typography>
                         </ItemDelivery>
                     ))}

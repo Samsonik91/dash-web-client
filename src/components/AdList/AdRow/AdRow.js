@@ -11,12 +11,12 @@ const AdBox = styled(Box)(({theme})=>({
     width: '96%',
     display: 'flex',
     flexDirection: 'column',
-    gap: theme.spacing(2),
+    gap: '16px',
     margin: 'auto',
-    marginTop: theme.spacing(2),
-    marginBottom: theme.spacing(2),
-    paddingRight: theme.spacing(2),
-    paddingLeft: theme.spacing(2),
+    marginTop: '16px',
+    marginBottom: '16px',
+    paddingRight: '16px',
+    paddingLeft: '16px',
     [theme.breakpoints.down('sm')]:{
         width: '92%'
     }
@@ -45,7 +45,7 @@ const AdRow = React.memo(({page, disable, handlePage, numberOfPages, handleFavor
                     <AdSkeleton key={Math.random()+Math.random()}/>
                 ))
             }
-            <Stack spacing={2} sx={{m: 'auto', mt: 2}}>
+            <Stack spacing={2} sx={{margin: 'auto', marginTop: '16px'}}>
                 <Pagination
                     disabled={isFetching || !ads || ads?.length<1 ? true : false}
                     count={numberOfPages || 10}
