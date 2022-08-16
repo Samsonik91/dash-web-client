@@ -90,9 +90,7 @@ const Messages = React.memo(({socket, setSocket}) => {
     },[currentChat])
 
     useEffect(()=>{
-        const IS_PROD = process.env.NODE_ENV === "production"
-        const URL = IS_PROD ? "https://socket-dashboard-project.herokuapp.com" : "ws://localhost:8800"
-        !socket && setSocket(io((URL)))
+        !socket && setSocket(io(("https://dash-web-socket.herokuapp.com")))
     },[])
 
     useEffect(()=>{

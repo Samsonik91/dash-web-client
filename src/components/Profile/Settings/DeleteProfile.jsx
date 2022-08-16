@@ -5,6 +5,7 @@ import {SettingItem, SettingItemTop} from "./styledComponents"
 import {Button} from "@mui/material"
 import Swall from "sweetalert2"
 import {deleteUser, logOut} from "../../../thunks/user"
+import Swal from "sweetalert2";
 
 const DeleteProfile = () => {
 
@@ -79,9 +80,34 @@ const DeleteProfile = () => {
         }
     }
 
+    const handleOut = () => {
+        return Swal.fire({
+            title: 'Вы уверены что хотите выйти ?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Да',
+            cancelButtonText: 'Нет',
+            reverseButtons: true
+        })
+            .then((result)=>{
+                if(result.isConfirmed){
+                    dispatch(logOut(navigate))
+                    window.location.reload()
+                }else{
+                    return
+                }
+            })
+    }
+
     return (
         <SettingItem>
             <SettingItemTop>
+                <Button
+                    variant='contained'
+                    onClick={handleOut}
+                >
+                    Выйти
+                </Button>
                 <Button
                     variant='contained'
                     color='error'
