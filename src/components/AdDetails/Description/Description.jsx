@@ -88,10 +88,10 @@ const Description = ({post, preview}) => {
                         {post.typeDeal === 'change' && <small>Обмен</small>}
                         {post.typeDeal === 'free' && <small>Отдам даром</small>}
                     </Typography>
-                    <Typography variant='h5' sx={{paddingTop: {xs: '8px', sm: '0px'}, marginLeft: '8px'}}>
+                    <Typography variant='h5' sx={{paddingTop: {xs: '8px', sm: '0px'}, paddingBottom: {sm: '2px'}, marginLeft: '8px'}}>
                         {post.typeDeal === 'price' && post.currency}
                     </Typography>
-                    <Typography variant='body1' sx={{paddingTop: {xs: '10px', sm: '0px'}, marginLeft: '32px'}}>
+                    <Typography variant='body1' sx={{paddingTop: {xs: '12px', sm: '0px'}, paddingBottom: {sm: '4px'}, marginLeft: '32px'}}>
                         {post.haggle ? 'Договорная' : null}
                     </Typography>
                 </PriceBox>
