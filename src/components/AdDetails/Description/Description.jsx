@@ -82,8 +82,8 @@ const Description = ({post, preview}) => {
                 <Typography variant='h4' sx={{margin: '16px'}}>
                     {post.name}
                 </Typography>
-                <PriceBox>
-                    <Typography variant='h4' sx={{margin: '16px'}}>
+                <PriceBox sx={{margin: '16px'}}>
+                    <Typography variant='h4' >
                         {post.typeDeal === 'price' && post.price}
                         {post.typeDeal === 'change' && <small>Обмен</small>}
                         {post.typeDeal === 'free' && <small>Отдам даром</small>}
