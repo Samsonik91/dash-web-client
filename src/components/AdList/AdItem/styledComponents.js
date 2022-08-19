@@ -56,7 +56,7 @@ export const TextDate = styled(Typography)(({theme})=>({
         marginBottom: '4px'
     },
     [theme.breakpoints.down('sm')]:{
-        paddingTop: '2px'
+        paddingTop: '8px'
     }
 }))
 
