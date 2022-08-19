@@ -51,10 +51,12 @@ export const LocationBox = styled(Box)(()=>({
 }))
 
 export const TextDate = styled(Typography)(({theme})=>({
-    marginTop: '15px',
     marginLeft: '8px',
     [theme.breakpoints.up('sm')]:{
         marginBottom: '4px'
+    },
+    [theme.breakpoints.down('sm')]:{
+        paddingTop: '15px'
     }
 }))
 
