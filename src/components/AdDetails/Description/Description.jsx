@@ -88,7 +88,7 @@ const Description = ({post, preview}) => {
                         {post.typeDeal === 'change' && <small>Обмен</small>}
                         {post.typeDeal === 'free' && <small>Отдам даром</small>}
                     </Typography>
-                    <Typography variant='h5' sx={{marginBottom: '8px'}}, marginLeft: '-8px'}}>
+                    <Typography variant='h5' sx={{marginBottom: '8px', marginLeft: '8px'}}>
                         {post.typeDeal === 'price' && post.currency}
                     </Typography>
                     <Typography variant='body1' sx={{marginBottom:{xs: '0px', sm: '20px'}, marginLeft: '32px'}}>
