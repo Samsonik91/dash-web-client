@@ -33,7 +33,7 @@ export const DeleteBox = styled(Box)(()=>({
     }
 }))
 
-export const PhotoBoxField = styled(Box)(()=>({
+export const PhotoBoxField = styled(Box)(({theme})=>({
     position: 'relative',
     width: '150px',
     height: '150px',
@@ -55,6 +55,9 @@ export const PhotoBoxField = styled(Box)(()=>({
             opacity: 0.5,
             zIndex: 2
         }
+    },
+    [theme.breakpoints.down('sm')]:{
+        marginBottom: '8px'
     }
 }))
 
@@ -65,7 +68,7 @@ export const PhotoDeleteIcon = styled(DeleteForeverIcon)(()=>({
     borderRadius: '100%'
 }))
 
-export const InputBox = styled(Box)(()=>({
+export const InputBox = styled(Box)(({theme})=>({
     width: '150px',
     height: '150px',
     border: '1px solid black',
@@ -73,5 +76,8 @@ export const InputBox = styled(Box)(()=>({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    cursor: 'pointer'
+    cursor: 'pointer',
+    [theme.breakpoints.down('sm')]:{
+        marginBottom: '8px'
+    }
 }))
