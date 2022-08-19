@@ -69,7 +69,7 @@ const AdItem = React.memo(({ad, disable, handleFavorite}) => {
                             <PriceText variant='h5'>{ad.price}</PriceText>
                             <Typography
                                 variant='subtitle1'
-                                sx={{marginBottom: {xs: '-8px', sm: 0}}}
+                                sx={{marginTop: {xs: '18px', sm: 0}}}
                             >{ad.currency}</Typography>
                         </InnerPriceBox>
                         {ad.haggle ? <Typography variant='body2' component='div'>
