@@ -60,7 +60,9 @@ const SkeletonDetails = () => {
                             <PriceBox sx={{width: '40%'}}/>
                             <PriceBox sx={{width: '30%'}}/>
                         </Characteristics>
-                        <PriceBox sx={{height: '24px', width: '30%'}}/>
+                        <PriceBox
+                            sx={{marginBottom: {xs: '32px', sm: 0}, height: '24px', width: '30%'}}
+                        />
                         <DescriptionBox>
                             {linears.map((l, i)=>(
                                 <DescriptionLinear

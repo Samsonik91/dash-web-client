@@ -14,14 +14,17 @@ export const WrapperBox = styled(Box)(()=>({
     borderRadius: '4px'
 }))
 
-export const StyledCardMedia = styled(Box)(()=>({
+export const StyledCardMedia = styled(Box)(({theme})=>({
     background: '#d3dbdb',
     height: '200px',
     width: '100%',
     margin: 'auto',
     cursor: 'pointer',
     borderRadius: '3px',
-    position: 'relative'
+    position: 'relative',
+    [theme.breakpoints.down('sm')]:{
+        marginBottom: '8px'
+    }
 }))
 
 export const StyledCircular = styled(CircularProgress)(()=>({

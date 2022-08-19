@@ -15,7 +15,9 @@ const SearchMenu = ({handleSearchValue, searchByTags, search}) => {
 
     const handleOpenMenu = e => setAnchorEl(e.currentTarget)
     const handleCloseMenu = (e) => {
-        if(e.currentTarget.className === 'search-input' && e.currentTarget.className !== 'search-button'){
+        e.preventDefault()
+        e.stopPropagation()
+        if(e.currentTarget.classList.contains('search-input') && !e.currentTarget.classList.contains('search-button')){
             return false
         }else{
             setAnchorEl(null)

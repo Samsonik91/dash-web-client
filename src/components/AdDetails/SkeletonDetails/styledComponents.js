@@ -49,11 +49,14 @@ export const DescriptionSkeleton = styled(Box)(({theme})=>({
     }
 }))
 
-export const TopBox = styled(Box)(()=>({
+export const TopBox = styled(Box)(({theme})=>({
     width: '100%',
     display: 'flex',
     justifyContent: 'space-between',
-    alignItems: 'center'
+    alignItems: 'center',
+    [theme.breakpoints.down('sm')]:{
+        marginBottom: '32px'
+    }
 }))
 
 export const DateBox = styled(Box)(()=>({
@@ -63,11 +66,14 @@ export const DateBox = styled(Box)(()=>({
     borderRadius: '3px'
 }))
 
-export const NameBox= styled(Box)(()=>({
+export const NameBox= styled(Box)(({theme})=>({
     width: '100%',
     background: 'lightgray',
     borderRadius: '3px',
-    height: '40px'
+    height: '40px',
+    [theme.breakpoints.down('sm')]:{
+        marginBottom: '32px'
+    }
 }))
 
 export const PriceBox = styled(Box)(()=>({
@@ -75,25 +81,35 @@ export const PriceBox = styled(Box)(()=>({
     height: '40px',
     background: 'lightgray',
     borderRadius: '3px',
+    marginBottom: '8px'
 }))
 
-export const Characteristics = styled(Box)(()=>({
+export const Characteristics = styled(Box)(({theme})=>({
     width: '70%',
     display: 'flex',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    [theme.breakpoints.down('sm')]:{
+        marginBottom: '32px'
+    }
 }))
 
-export const DescriptionBox = styled(Box)(()=>({
+export const DescriptionBox = styled(Box)(({theme})=>({
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    gap: '8px'
+    gap: '8px',
+    [theme.breakpoints.down('sm')]:{
+        marginBottom: '32px'
+    }
 }))
 
-export const DescriptionLinear = styled(Box)(()=>({
+export const DescriptionLinear = styled(Box)(({theme})=>({
     background: 'lightgray',
     borderRadius: '3px',
-    height: '24px'
+    height: '24px',
+    [theme.breakpoints.down('sm')]:{
+        marginBottom: '8px'
+    }
 }))
 
 export const MessageSkeleton = styled(Box)(({theme})=>({
@@ -110,11 +126,14 @@ export const MessageSkeleton = styled(Box)(({theme})=>({
     }
 }))
 
-export const TextFieldSkeleton = styled(Box)(()=>({
+export const TextFieldSkeleton = styled(Box)(({theme})=>({
     width: '100%',
     background: 'lightgray',
     borderRadius: '4px',
-    height: '112px'
+    height: '112px',
+    [theme.breakpoints.down('sm')]:{
+        marginBottom: '16px'
+    }
 }))
 
 export const ProfileGrid = styled(Grid)(()=>({
@@ -139,9 +158,12 @@ export const ProfileBox = styled(Box)(({theme})=>({
     }
 }))
 
-export const SkeletonAvatar = styled(Avatar)(()=>({
+export const SkeletonAvatar = styled(Avatar)(({theme})=>({
     width: '86px',
-    height: '86px'
+    height: '86px',
+    [theme.breakpoints.down('sm')]:{
+        marginBottom: '16px'
+    }
 }))
 
 export const DeliverySkeleton = styled(Box)(({theme})=>({

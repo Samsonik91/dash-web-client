@@ -42,7 +42,9 @@ function App() {
     }
 
     useEffect(()=>{
-        !socket && setSocket(io(("https://dash-web-socket.herokuapp.com")))
+        const isProd = (process.env.NODE_ENV === 'production')
+        const URL = isProd ? "https://dash-web-socket.herokuapp.com" : "http://localhost:8800"
+        !socket && setSocket(io((URL)))
         dispatch(getUnread(userId))
     },[userId])
 

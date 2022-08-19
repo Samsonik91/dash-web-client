@@ -1,10 +1,13 @@
 import {Box, Grid, IconButton, styled, Typography} from "@mui/material"
 
-export const MainGrid = styled(Grid)(()=>({
+export const MainGrid = styled(Grid)(({theme})=>({
     padding: '16px',
     background: 'white',
     borderRadius: '4px',
-    border: '1px solid #4e5052'
+    border: '1px solid #4e5052',
+    [theme.breakpoints.down('sm')]:{
+        marginBottom: '16px'
+    }
 }))
 
 export const PhotoGrid = styled(Grid)(()=>({
@@ -47,9 +50,12 @@ export const LocationBox = styled(Box)(()=>({
     flexWrap: 'wrap'
 }))
 
-export const TextDate = styled(Typography)(()=>({
-    marginBottom: '4px',
-    marginLeft: '8px'
+export const TextDate = styled(Typography)(({theme})=>({
+    marginBottom: '-4px',
+    marginLeft: '8px',
+    [theme.breakpoints.up('sm')]:{
+        marginBottom: '4px'
+    }
 }))
 
 export const PriceBox = styled(Box)(({theme})=>({

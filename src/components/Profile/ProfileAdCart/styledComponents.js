@@ -90,12 +90,9 @@ export const PriceBox = styled(Box)(({theme})=>({
     }
 }))
 
-export const HaggleTypography = styled(Typography)(({theme})=>({
+export const HaggleTypography = styled(Typography)(()=>({
     textAlign: 'center',
-    marginLeft: '16px',
-    [theme.breakpoints.down('sm')]:{
-        marginBottom: '5px'
-    }
+    marginLeft: '16px'
 }))
 
 export const UpdatingBox = styled(Box)(({theme})=>({

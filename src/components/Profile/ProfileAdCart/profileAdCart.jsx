@@ -99,11 +99,17 @@ const ProfileAdCart = ({ad, setDeleting}) => {
                 <PriceGrid item xs={12} sm={2}>
                     <PriceBox>
                         <Typography variant='h6' sx={{textAlign: 'center'}}>
-                            {ad.typeDeal === 'price' ? <>
-                                <strong>{ad.price}</strong><small>{` ${ad.currency}`}</small>
+                            {ad.typeDeal === 'price' &&
+                                <>
+                                    <strong>{ad.price}</strong><small>{` ${ad.currency}`}</small>
                                 </>
-                                :
-                                null}
+                            }
+                            {ad.typeDeal === 'change' &&
+                                <strong>Обмен</strong>
+                            }
+                            {ad.typeDeal === 'free' &&
+                                <strong>Даром</strong>
+                            }
                         </Typography>
                         <HaggleTypography variant='body2'>
                             {ad.typeDeal === 'price' && ad.haggle ? 'Договорная' : null}

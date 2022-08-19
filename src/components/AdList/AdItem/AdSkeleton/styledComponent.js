@@ -16,9 +16,12 @@ export const MainContainer = styled(Container)(({theme})=>({
 }))
 
 export const PhotoContainer = styled(Box)(({theme})=>({
-    flex: 3,
-    [theme.breakpoints.down('md')]:{
-        flex: 4
+    flex: 4,
+    [theme.breakpoints.up('md')]:{
+        flex: 3
+    },
+    [theme.breakpoints.down('sm')]:{
+        marginBottom: '24px'
     }
 }))
 
@@ -45,7 +48,8 @@ export const NameContainer = styled(Box)(({theme})=>({
         flex: 6
     },
     [theme.breakpoints.down('sm')]:{
-        gap: '8px'
+        gap: '8px',
+        marginBottom: '24px'
     }
 }))
 
@@ -56,6 +60,9 @@ export const NameBox = styled(Box)(({theme})=>({
     borderRadius: '4px',
     [theme.breakpoints.up('sm')]:{
         marginLeft: '16px'
+    },
+    [theme.breakpoints.down('sm')]:{
+        marginBottom: '8px'
     }
 }))
 
@@ -100,6 +107,7 @@ export const NumberPrice = styled(Box)(({theme})=>({
     borderRadius: '4px',
     [theme.breakpoints.down('sm')]:{
         width: '25%',
+        marginBottom: '8px'
     },
     [theme.breakpoints.up('sm')]:{
         marginRight: '-8px'
@@ -121,8 +129,5 @@ export const IconBox = styled(Box)(({theme})=>({
     textAlign: 'end',
     position: 'absolute',
     right: '8px',
-    bottom: '0px',
-    [theme.breakpoints.up('sm')]:{
-        position: 'block'
-    }
+    bottom: '0px'
 }))

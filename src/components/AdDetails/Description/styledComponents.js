@@ -42,8 +42,12 @@ export const CharacterBox = styled(Box)(()=>({
     marginLeft: '16px'
 }))
 
-export const CharacterMiniBox = styled(Box)(()=>({
+export const CharacterMiniBox = styled(Box)(({theme})=>({
     border: '1px solid black',
     borderRadius: '3px',
-    padding: '8px'
+    padding: '8px',
+    [theme.breakpoints.down('sm')]:{
+        marginRight: '8px',
+        marginBottom: '8px'
+    }
 }))

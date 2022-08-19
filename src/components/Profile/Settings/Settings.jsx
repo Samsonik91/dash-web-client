@@ -36,12 +36,21 @@ const Settings = () => {
                 </ProfilePart1>
                 <ProfileDivider/>
                 <ProfilePart2>
-                    <Typography variant='h5'>{result?.name}</Typography>
+                    <Typography
+                        variant='h5'
+                        sx={{marginBottom: {xs: '16px', sm: 0}}}
+                    >{result?.name}</Typography>
                     <TypographyBox>
-                        <Typography variant='body1'>
+                        <Typography
+                            variant='body1'
+                            sx={{marginBottom: {xs: '8px', sm: 0}}}
+                        >
                             <strong>Email:</strong>{` ${result?.email}`}
                         </Typography>
-                        <Typography variant='body1'>
+                        <Typography
+                            variant='body1'
+                            sx={{marginBottom: {xs: '8px', sm: 0}}}
+                        >
                             <strong>Телефон:</strong>{result?.phone?.length>0 && ` +38${result.phone}`}
                         </Typography>
                         <Typography variant='body1'>

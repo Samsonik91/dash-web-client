@@ -1,6 +1,9 @@
 import axios from 'axios'
 
-const API = axios.create({baseURL: 'https://dash-web-backend.herokuapp.com'})
+const isProd = (process.env.NODE_ENV === 'production')
+const URL = isProd ? "https://dash-web-backend.herokuapp.com" : "http://localhost:5000"
+
+const API = axios.create({baseURL: URL})
 
 API.interceptors.request.use((req)=>{
     if(localStorage.getItem('profile')) {

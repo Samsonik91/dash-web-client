@@ -26,7 +26,8 @@ export const ProfileTop = styled(Box)(({theme})=>({
     background: 'white',
     padding: '16px',
     [theme.breakpoints.down('sm')]:{
-        flexDirection: 'column'
+        flexDirection: 'column',
+        marginBottom: '16px'
     }
 }))
 
@@ -67,11 +68,14 @@ export const TypographyBox = styled(Box)(()=>({
     gap: '8px'
 }))
 
-export const SettingItem = styled(Box)(()=>({
+export const SettingItem = styled(Box)(({theme})=>({
     width: '100%',
     background: 'white',
     borderRadius: '4px',
     padding: '16px',
+    [theme.breakpoints.down('sm')]:{
+        marginBottom: '16px'
+    }
 }))
 
 export const SettingItemTop = styled(Box)(()=>({
@@ -98,11 +102,14 @@ export const InnerFieldBox = styled(Box)(()=>({
     gap: '16px'
 }))
 
-export const InnerFieldBoxItem = styled(Box)(()=>({
+export const InnerFieldBoxItem = styled(Box)(({theme})=>({
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'start'
+    alignItems: 'start',
+    [theme.breakpoints.down('sm')]:{
+        marginBottom: '16px'
+    }
 }))
 
 export const SettingTextField = styled(TextField)(()=>({

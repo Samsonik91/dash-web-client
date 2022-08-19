@@ -15,14 +15,17 @@ export const MainBox = styled(Container)(({theme})=>({
     }
 }))
 
-export const ChatMenu = styled(Box)(()=>({
+export const ChatMenu = styled(Box)(({theme})=>({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'start',
     height: '250px',
     overflow: 'scroll',
     border: '1px solid gray',
-    borderRadius: '4px'
+    borderRadius: '4px',
+    [theme.breakpoints.down('sm')]:{
+        marginBottom: '8px'
+    }
 }))
 
 export const ChatBox = styled(Box)(()=>({
