@@ -11,7 +11,8 @@ export const MainContainer = styled(Container)(({theme})=>({
     paddingBottom: '16px',
     [theme.breakpoints.down('sm')]:{
         flexDirection: 'column',
-        gap: '24px'
+        gap: '24px',
+        marginBottom: '16px'
     }
 }))
 
