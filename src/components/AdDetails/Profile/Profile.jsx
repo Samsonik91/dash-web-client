@@ -76,7 +76,7 @@ const Profile = ({contactFace, delivery, location, sinceFromUser, author, previe
                 <Typography variant='h5'>{contactFace}</Typography>
                 <Typography
                     variant='body2'
-                    sx={{marginTop: {xs: '-6px',sm: '-16px'}}}
+                    sx={{marginTop: {xs: '-4px',sm: '-16px'}}}
                 >{`На сайте с ${sinceFromUser}`}</Typography>
                 <RowToAds onClick={()=> navigate(`/adList/author/${author}`)}>
                     <Typography variant='body1'>Другие объявления автора</Typography>
