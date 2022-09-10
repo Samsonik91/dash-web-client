@@ -4,7 +4,7 @@ import {Card, CardContent, CardMedia, Link, styled, Typography} from "@mui/mater
 import noFoto from '../../logotypes/noImage.png'
 
 const StyledCardMedia = styled(CardMedia)(()=>({
-    height: '200px',
+    height: '250px',
     border: '2px solid #ebeded',
     cursor: 'pointer',
     borderRadius: '3px'
