@@ -105,6 +105,7 @@ export const ChatWrapperBox = styled(Box)(()=>({
 export const NoChatTypography = styled(Typography)(({theme})=>({
     margin: 'auto',
     marginTop: '150px',
+    padding: '8px',
     textAlign: 'center',
     opacity: '0.7',
     color: 'darkgrey',
