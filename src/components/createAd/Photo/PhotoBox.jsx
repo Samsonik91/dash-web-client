@@ -85,7 +85,7 @@ const PhotoBox = ({postData, setPostData, isPrompt, setIsPrompt}) => {
                                 draggable={true}
                                 key={i}
                                 data-id={postData.files[i]}
-                                sx={{backgroundImage: `url(${postData.files[i]})`, background-size: 'cover'}}
+                                sx={{backgroundImage: `url(${postData.files[i]})`, backgroundSize: 'cover'}}
                                 onDragStart={(e)=> dragStartHandler(e, i)}
                                 onDragEnter={(e)=> onDragEnterHandler(e)}
                                 onDragEnd={(e)=> dragEndHandler(e)}
