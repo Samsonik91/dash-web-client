@@ -17,7 +17,7 @@ const RecentAds = ({blockWidth}) => {
     },[])
 
     return (
-        <MainBox sx={{width: blockWidth}}>
+        <MainBox sx={{width: `calc(${blockWidth} + 16px)`}}>
             <Typography variant='h5' sx={{textAlign: 'center'}}>
                 Последние добавленные объявления
             </Typography>
