@@ -23,7 +23,7 @@ const FieldBox = styled(Container)(({theme})=>({
     marginRight: '24px',
     borderRadius: '5px',
     [theme.breakpoints.down("md")]:{
-        width: '70%'
+        width: '90%'
     }
 }))
 
