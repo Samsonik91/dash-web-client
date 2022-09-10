@@ -34,8 +34,8 @@ const ConversationItem = React.memo(({currentChat, setCurrentChat, screen}) => {
                             >
                                 {screen === 'large' && (currentChat?.name.length > 35 ?
                                     `${currentChat?.name.slice(0,35)}...` : currentChat?.name)}
-                                {screen === 'small' && (currentChat?.name.length > 18 ?
-                                    `${currentChat?.name.slice(0,18)}...` : currentChat?.name)}
+                                {screen === 'small' && (currentChat?.name.length > 13 ?
+                                    `${currentChat?.name.slice(0,13)}...` : currentChat?.name)}
                             </Typography>
                         </NameBox>
                     </Box>
