@@ -33,6 +33,7 @@ export const NameBox = styled(Box)(({theme})=>({
     flexDirection: 'column',
     justifyContent: 'space-between',
     [theme.breakpoints.down('md')]:{
-        justifyContent: 'start'
+        justifyContent: 'start',
+        marginBottom: '16px'
     }
 }))
