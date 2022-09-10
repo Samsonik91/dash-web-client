@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react'
-import {Container, Grid, IconButton, styled} from "@mui/material"
+import {Container, Grid, IconButton, Box, styled} from "@mui/material"
 import HomeWorkIcon from '@mui/icons-material/HomeWork'
 import DirectionsCarIcon from '@mui/icons-material/DirectionsCar'
 import CheckroomIcon from '@mui/icons-material/Checkroom'
@@ -14,7 +14,7 @@ import ChairIcon from '@mui/icons-material/Chair'
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone'
 import FieldGrid from "./FieldGrid"
 
-const FieldBox = styled(Container)(({theme})=>({
+const FieldBox = styled(Box)(({theme})=>({
     background: 'white',
     padding: 0,
     marginTop: '24px',
