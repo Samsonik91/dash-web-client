@@ -1,6 +1,6 @@
 import {Box, Grid, styled} from "@mui/material"
 
-export const MainBox = styled(Box)(({theme)=>({
+export const MainBox = styled(Box)(()=>({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
