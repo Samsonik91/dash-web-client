@@ -109,6 +109,7 @@ export const NoChatTypography = styled(Typography)(({theme})=>({
     opacity: '0.7',
     color: 'darkgrey',
     [theme.breakpoints.down('sm')]:{
-        marginTop: '50px'
+        marginTop: '50px',
+        borderRadius: '4px'
     }
 }))
