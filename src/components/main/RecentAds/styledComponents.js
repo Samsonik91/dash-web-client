@@ -15,7 +15,7 @@ export const AdsGrid = styled(Grid)(()=>({
 }))
 
 export const StyledGrid = styled(Grid)(({theme})=>({
-    //paddingRight: '16px',
+    paddingRight: '16px',
     [theme.breakpoints.down('sm')]:{
         marginBottom: '16px'
     }
