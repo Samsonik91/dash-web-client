@@ -11,7 +11,7 @@ export const AdsGrid = styled(Grid)(()=>({
     margin: 'auto',
     marginTop: '16px',
     rowGap: '16px',
-    width: '100%'
+    width: 'calc(100% + 16px)'
 }))
 
 export const StyledGrid = styled(Grid)(({theme})=>({
