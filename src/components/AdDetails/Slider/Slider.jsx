@@ -26,7 +26,7 @@ const Slider = ({images}) => {
                     <img key={i+Math.random()} src={f}
                          style={{
                              position: 'absolute',
-                             objectFit: 'contain',
+                             objectFit: 'none',
                              width: '100%',
                              height: '100%',
                              opacity: imageNum === i ? 1 : 0,
