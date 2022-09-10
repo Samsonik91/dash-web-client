@@ -33,11 +33,11 @@ const CategoryField = ({setBlockWidth}) => {
     const catRef = useRef(null)
 
     window.onresize = () => {
-        setBlockWidth(catRef.current.offsetWidth)
+        setBlockWidth(catRef.current.offsetWidth + 16)
     }
 
     useEffect(()=>{
-        setBlockWidth(catRef.current.offsetWidth)
+        setBlockWidth(catRef.current.offsetWidth + 16)
     },[])
 
     return (
