@@ -47,7 +47,7 @@ const SmallScreen = ({conversations,
                             conversation={c}
                             unread={unread}
                             handleChat={handleChat}
-                            screen='large'
+                            screen='small'
                         />
                     )) :
                     <Typography variant='h6'>
