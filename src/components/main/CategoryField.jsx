@@ -16,7 +16,7 @@ import FieldGrid from "./FieldGrid"
 
 const FieldBox = styled(Box)(({theme})=>({
     background: 'white',
-    padding: 0,
+    padding: '16px',
     marginTop: '24px',
     marginBottom: '24px',
     marginLeft: '24px',
