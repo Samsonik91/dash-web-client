@@ -1,10 +1,13 @@
 import {Box, Grid, styled} from "@mui/material"
 
-export const MainBox = styled(Box)(()=>({
+export const MainBox = styled(Box)(({theme)=>({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    marginTop: '16px'
+    marginTop: '16px',
+    [theme.breakpoints.down('sm')]:{
+        marginLeft: '16px
+    }
 }))
 
 export const AdsGrid = styled(Grid)(()=>({
