@@ -14,7 +14,7 @@ import ChairIcon from '@mui/icons-material/Chair'
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone'
 import FieldGrid from "./FieldGrid"
 
-const FieldBox = styled(Box)(({theme})=>({
+const FieldBox = styled(Container)(({theme})=>({
     background: 'white',
     padding: '16px',
     marginTop: '24px',
