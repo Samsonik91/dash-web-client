@@ -34,7 +34,7 @@ const Conversation = React.memo(({conversation, handleChat, unread, screen}) => 
                     sx={{fontWeight: conUnread ? 'bold': 'normal'}}
                 >
                     {screen === 'large' && (name?.length > 25 ? `${name?.slice(0,25)}...` : name)}
-                    {screen === 'small' && (name?.length > 13 ? `${name?.slice(0,13)}...` : name)}
+                    {screen === 'small' && (name?.length > 18 ? `${name?.slice(0,18)}...` : name)}
                 </Typography>
             </NameBox>
         </ConversationBox>
