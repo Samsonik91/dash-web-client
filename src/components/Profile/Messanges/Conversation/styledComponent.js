@@ -14,8 +14,7 @@ export const ConversationBox = styled(Box)(({theme})=>({
         background: '#dce0e6'
     },
     [theme.breakpoints.down('sm')]:{
-        width: '90%',
-        marginBottom: '16px'
+        width: '90%'
     },
     [theme.breakpoints.up('md')]:{
         width: '100%'
