@@ -38,7 +38,7 @@ const Slider = ({images}) => {
                         src={noPhoto}
                         style={{
                             position: 'absolute',
-                            objectFit: 'contain',
+                            objectFit: 'scale-down',
                             width: '100%',
                             height: '100%',
                             transition: 'all 0.4s ease'
